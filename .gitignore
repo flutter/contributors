@@ -1,0 +1,8 @@
+# Dart tool artifacts
+.dart_tool/
+.packages
+pubspec.lock
+
+# OS metadata
+.DS_Store
+Thumbs.db
