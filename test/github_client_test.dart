@@ -118,5 +118,81 @@ void main() {
         throwsA(isA<Exception>()),
       );
     });
+
+    test('retries on 429 rate limit response and succeeds after retry',
+        () async {
+      var callCount = 0;
+      final mockClient = MockClient((request) async {
+        callCount++;
+        if (callCount == 1) {
+          return http.Response('{"message": "rate limit exceeded"}', 429,
+              headers: {'retry-after': '0'});
+        }
+        return http.Response(
+            jsonEncode([
+              {'login': 'recovered_user'}
+            ]),
+            200);
+      });
+
+      final client = GitHubClient(token: 'test', httpClient: mockClient);
+      final members = await client.getTeamMembers('flutter', 'robots');
+
+      expect(callCount, equals(2));
+      expect(members, equals({'recovered_user'}));
+    });
+
+    test('throws exception when rate limit retries are exhausted', () async {
+      final mockClient = MockClient((request) async {
+        return http.Response('{"message": "rate limit exceeded"}', 429,
+            headers: {'retry-after': '0'});
+      });
+
+      final client = GitHubClient(token: 'test', httpClient: mockClient);
+      expect(
+        () async => await client.getTeamMembers('flutter', 'robots'),
+        throwsA(isA<Exception>()),
+      );
+    });
+  });
+
+  group('Username Validation & Query Injection Protection', () {
+    test('validates conformant GitHub usernames', () {
+      expect(isValidGitHubUsername('Piinks'), isTrue);
+      expect(isValidGitHubUsername('loic-sharma'), isTrue);
+      expect(isValidGitHubUsername('fluttergithubbot'), isTrue);
+      expect(isValidGitHubUsername('dependabot[bot]'), isTrue);
+      expect(isValidGitHubUsername('user123'), isTrue);
+      expect(isValidGitHubUsername('a-b-c'), isTrue);
+    });
+
+    test('rejects malicious or invalid username strings', () {
+      expect(isValidGitHubUsername('user" { search { } }'), isFalse);
+      expect(isValidGitHubUsername('user\nother'), isFalse);
+      expect(isValidGitHubUsername('user with spaces'), isFalse);
+      expect(isValidGitHubUsername('-startinghyphen'), isFalse);
+      expect(isValidGitHubUsername('endinghyphen-'), isFalse);
+      expect(isValidGitHubUsername('user--consecutive'), isFalse);
+      expect(isValidGitHubUsername(''), isFalse);
+    });
+
+    test('getUserActivity throws ArgumentError on injection attempt', () async {
+      final client = GitHubClient(token: 'test');
+      expect(
+        () async => await client.getUserActivity('bad"user',
+            since: DateTime.utc(2026, 1, 1), until: DateTime.utc(2026, 1, 2)),
+        throwsA(isA<ArgumentError>()),
+      );
+    });
+
+    test('getBatchUserActivity throws ArgumentError on injection attempt',
+        () async {
+      final client = GitHubClient(token: 'test');
+      expect(
+        () async => await client.getBatchUserActivity(['validUser', 'bad"user'],
+            since: DateTime.utc(2026, 1, 1), until: DateTime.utc(2026, 1, 2)),
+        throwsA(isA<ArgumentError>()),
+      );
+    });
   });
 }

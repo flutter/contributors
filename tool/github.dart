@@ -2,6 +2,15 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:http/http.dart' as http;
 
+/// Regex pattern for valid GitHub usernames and bot app handles.
+final _gitHubUsernamePattern =
+    RegExp(r'^[a-zA-Z0-9](?:[a-zA-Z0-9]|-(?=[a-zA-Z0-9])){0,38}(?:\[bot\])?$');
+
+/// Returns true if [username] conforms to valid GitHub username syntax.
+bool isValidGitHubUsername(String username) {
+  return _gitHubUsernamePattern.hasMatch(username.trim());
+}
+
 /// Client for communicating with GitHub REST and GraphQL APIs across the Flutter organization.
 class GitHubClient {
   GitHubClient({String? token, http.Client? httpClient})
@@ -41,6 +50,65 @@ class GitHubClient {
     return map;
   }
 
+  /// Executes an HTTP request with automatic rate limit and transient error retries.
+  Future<http.Response> _sendWithRateLimitRetry(
+    Future<http.Response> Function() requestFn, {
+    int maxRetries = 3,
+  }) async {
+    for (var attempt = 1; attempt <= maxRetries; attempt++) {
+      final response = await requestFn();
+
+      final isRateLimited = response.statusCode == 429 ||
+          (response.statusCode == 403 &&
+              (response.headers['x-ratelimit-remaining'] == '0' ||
+                  response.body.contains('rate limit')));
+
+      if (isRateLimited) {
+        final retryAfterSec =
+            int.tryParse(response.headers['retry-after'] ?? '');
+        Duration waitDuration;
+        if (retryAfterSec != null && retryAfterSec > 0) {
+          waitDuration = Duration(seconds: retryAfterSec);
+        } else {
+          final resetEpoch =
+              int.tryParse(response.headers['x-ratelimit-reset'] ?? '');
+          if (resetEpoch != null) {
+            final resetTime = DateTime.fromMillisecondsSinceEpoch(
+                resetEpoch * 1000,
+                isUtc: true);
+            final diff = resetTime.difference(DateTime.now().toUtc());
+            waitDuration =
+                diff.isNegative ? Duration(seconds: attempt * 2) : diff;
+          } else {
+            waitDuration = Duration(seconds: attempt * 2);
+          }
+        }
+
+        if (attempt < maxRetries && waitDuration.inSeconds <= 60) {
+          print(
+              'Rate limit encountered. Waiting ${waitDuration.inSeconds}s before retry $attempt...');
+          await Future<void>.delayed(waitDuration);
+          continue;
+        } else if (attempt == maxRetries) {
+          throw Exception(
+              'GitHub API rate limit exceeded (HTTP ${response.statusCode}): ${response.body}');
+        }
+      }
+
+      // Retry on transient 5xx server errors
+      if (response.statusCode >= 500 &&
+          response.statusCode <= 504 &&
+          attempt < maxRetries) {
+        await Future<void>.delayed(Duration(seconds: attempt * 2));
+        continue;
+      }
+
+      return response;
+    }
+
+    throw Exception('Request failed after $maxRetries attempts');
+  }
+
   /// Fetches all members of a GitHub organization across all pages.
   Future<Set<String>> getOrgMembers(String org) async {
     final members = <String>{};
@@ -48,7 +116,8 @@ class GitHubClient {
     while (true) {
       final uri = Uri.parse(
           'https://api.github.com/orgs/$org/members?per_page=100&page=$page');
-      final response = await _httpClient.get(uri, headers: _headers);
+      final response = await _sendWithRateLimitRetry(
+          () => _httpClient.get(uri, headers: _headers));
       if (response.statusCode != 200) {
         throw Exception(
             'Failed to fetch org members for $org (HTTP ${response.statusCode}): ${response.body}');
@@ -72,7 +141,8 @@ class GitHubClient {
     while (true) {
       final uri = Uri.parse(
           'https://api.github.com/orgs/$org/teams/$teamSlug/members?per_page=100&page=$page');
-      final response = await _httpClient.get(uri, headers: _headers);
+      final response = await _sendWithRateLimitRetry(
+          () => _httpClient.get(uri, headers: _headers));
       if (response.statusCode == 404) {
         // Team may not exist yet or not visible with current token.
         return members;
@@ -100,7 +170,8 @@ class GitHubClient {
     while (true) {
       final uri = Uri.parse(
           'https://api.github.com/orgs/$org/teams/$teamSlug/teams?per_page=100&page=$page');
-      final response = await _httpClient.get(uri, headers: _headers);
+      final response = await _sendWithRateLimitRetry(
+          () => _httpClient.get(uri, headers: _headers));
       if (response.statusCode == 404 || response.statusCode != 200) break;
       final list = jsonDecode(response.body) as List;
       if (list.isEmpty) break;
@@ -122,7 +193,8 @@ class GitHubClient {
       'query': query,
       if (variables != null) 'variables': variables,
     });
-    final response = await _httpClient.post(uri, headers: _headers, body: body);
+    final response = await _sendWithRateLimitRetry(
+        () => _httpClient.post(uri, headers: _headers, body: body));
     if (response.statusCode != 200) {
       throw Exception(
           'GraphQL query failed (HTTP ${response.statusCode}): ${response.body}');
@@ -138,6 +210,10 @@ class GitHubClient {
   /// Fetches contribution statistics for a specific user over the given date range.
   Future<Map<String, int>> getUserActivity(String username,
       {required DateTime since, required DateTime until}) async {
+    if (!isValidGitHubUsername(username)) {
+      throw ArgumentError('Invalid GitHub username: "$username"');
+    }
+
     final sinceIso = since.toUtc().toIso8601String().split('T').first;
     final untilIso = until.toUtc().toIso8601String().split('T').first;
 
@@ -188,6 +264,12 @@ query(\$authored: String!, \$issues: String!, \$reviewed: String!) {
       {required DateTime since,
       required DateTime until}) async {
     if (usernames.isEmpty) return {};
+
+    for (final u in usernames) {
+      if (!isValidGitHubUsername(u)) {
+        throw ArgumentError('Invalid GitHub username in batch: "$u"');
+      }
+    }
 
     final sinceIso = since.toUtc().toIso8601String().split('T').first;
     final untilIso = until.toUtc().toIso8601String().split('T').first;

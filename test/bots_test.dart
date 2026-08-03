@@ -20,7 +20,6 @@ void main() {
       expect(isBot('reidbaker-agent'), isTrue);
       expect(isBot('gemini-code-assist'), isTrue);
       expect(isBot('gemini-code-assist[bot]'), isTrue);
-      expect(isBot('ghost'), isTrue);
       expect(isBot('buildbot'), isTrue);
     });
 
@@ -29,11 +28,11 @@ void main() {
       expect(isBot('some_user_bot'), isTrue);
       expect(isBot('service[bot]'), isTrue);
       expect(isBot('flutter-autoroll'), isTrue);
-      expect(isBot('custom-robot-account'), isTrue);
+      expect(isBot('custom-autoroll-service'), isTrue);
     });
 
     test(
-        'identifies human contributors as non-bots (including names ending in bot)',
+        'identifies human contributors as non-bots (including names ending in bot or containing robot)',
         () {
       expect(isBot('Piinks'), isFalse);
       expect(isBot('parlough'), isFalse);
@@ -50,6 +49,19 @@ void main() {
       expect(isBot('BottlePumpkin'), isFalse);
       expect(isBot('saibotma'), isFalse);
       expect(isBot('Abbott-Deng'), isFalse);
+      expect(isBot('mr-robot'), isFalse);
+      expect(isBot('robotics-fan'), isFalse);
+      expect(isBot('irobot'), isFalse);
+    });
+
+    test('handles deleted user ghost account separately', () {
+      expect(isGhost('ghost'), isTrue);
+      expect(isGhost('  GHOST  '), isTrue);
+      expect(isGhost('Piinks'), isFalse);
+      expect(isBot('ghost'), isFalse);
+      expect(isExcludedAccount('ghost'), isTrue);
+      expect(isExcludedAccount('dependabot'), isTrue);
+      expect(isExcludedAccount('Piinks'), isFalse);
     });
 
     test('handles whitespace and casing gracefully', () {

@@ -45,12 +45,21 @@ const Set<String> knownBots = {
   'reidbaker-agent',
   'gemini-code-assist',
   'gemini-code-assist[bot]',
-  'ghost',
 };
 
 /// Resets the dynamic robot team members cache (useful for testing).
 void resetRobotTeamCache() {
   _robotTeamMembers.clear();
+}
+
+/// Returns true if [username] represents GitHub's placeholder for deleted accounts ('ghost').
+bool isGhost(String username) {
+  return username.toLowerCase().trim() == 'ghost';
+}
+
+/// Returns true if [username] is a bot or deleted account that should be excluded from activity tracking.
+bool isExcludedAccount(String username) {
+  return isGhost(username) || isBot(username);
 }
 
 /// Returns true if [username] belongs to `@flutter/robots` or matches a known bot pattern.
@@ -65,8 +74,7 @@ bool isBot(String username) {
   if (lower.endsWith('[bot]') ||
       lower.endsWith('-bot') ||
       lower.endsWith('_bot') ||
-      lower.contains('autoroll') ||
-      lower.contains('robot')) {
+      lower.contains('autoroll')) {
     return true;
   }
   return false;

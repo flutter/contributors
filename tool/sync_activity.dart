@@ -180,7 +180,9 @@ query(\$query: String!, \$cursor: String) {
     final prNodes = search?['nodes'] as List? ?? [];
     for (final node in prNodes) {
       final author = node['author']?['login'] as String?;
-      if (author != null && !isBot(author) && !maintainers.contains(author)) {
+      if (author != null &&
+          !isExcludedAccount(author) &&
+          !maintainers.contains(author)) {
         activeStats.putIfAbsent(
             author,
             () => {
@@ -202,7 +204,7 @@ query(\$query: String!, \$cursor: String) {
         final revAuthor = rev['author']?['login'] as String?;
         if (revAuthor != null &&
             revAuthor != author &&
-            !isBot(revAuthor) &&
+            !isExcludedAccount(revAuthor) &&
             !maintainers.contains(revAuthor)) {
           uniqueReviewers.add(revAuthor);
         }
@@ -264,7 +266,9 @@ query(\$query: String!, \$cursor: String) {
     final issueNodes = search?['nodes'] as List? ?? [];
     for (final node in issueNodes) {
       final author = node['author']?['login'] as String?;
-      if (author != null && !isBot(author) && !maintainers.contains(author)) {
+      if (author != null &&
+          !isExcludedAccount(author) &&
+          !maintainers.contains(author)) {
         activeStats.putIfAbsent(
             author,
             () => {
