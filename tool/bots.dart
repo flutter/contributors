@@ -41,10 +41,17 @@ const Set<String> knownBots = {
   'flutter-intellij-kokoro',
   'fluttercerberus',
   'DartDevtoolWorkflowBot',
+  'buildbot',
   'reidbaker-agent',
   'gemini-code-assist',
   'gemini-code-assist[bot]',
+  'ghost',
 };
+
+/// Resets the dynamic robot team members cache (useful for testing).
+void resetRobotTeamCache() {
+  _robotTeamMembers.clear();
+}
 
 /// Returns true if [username] belongs to `@flutter/robots` or matches a known bot pattern.
 bool isBot(String username) {
@@ -58,7 +65,6 @@ bool isBot(String username) {
   if (lower.endsWith('[bot]') ||
       lower.endsWith('-bot') ||
       lower.endsWith('_bot') ||
-      lower.endsWith('bot') ||
       lower.contains('autoroll') ||
       lower.contains('robot')) {
     return true;

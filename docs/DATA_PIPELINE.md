@@ -40,14 +40,14 @@ data/
 
 ```mermaid
 graph LR
-    Schedule["Daily schedule<br/>(02:17 UTC)"] --> Sync["dart run tool/sync_activity.dart<br/>(Query past 24h delta)"]
-    Sync --> WriteWeek["Append delta to current week<br/>data/activity/YYYY-Wxx.json"]
-    WriteWeek --> Prune["Prune weekly files<br/>older than 52 weeks (≥ 365d)"]
+    Schedule["Daily schedule<br/>(02:17 UTC)"] --> Sync["dart run tool/sync_activity.dart<br/>(Idempotent week sync)"]
+    Sync --> WriteWeek["Write current week<br/>data/activity/YYYY-Wxx.json"]
+    WriteWeek --> Prune["Prune weekly files<br/>older than 52 weeks (ISO week filename)"]
     Prune --> Sum["Recompute activity_summary.json<br/>= sum(active weekly files)"]
     Sum --> Commit["Commit updates<br/>[skip ci]"]
 ```
 
-- Each night at 02:17 UTC, the GitHub Actions workflow (`.github/workflows/sync_activity.yml`) queries the past 24 hours of activity using GraphQL with cursor pagination.
-- The 24-hour delta is merged into the current week's snapshot file in `data/activity/`.
-- Snapshot files older than 52 weeks ($\ge 365$ days) are deleted.
-- `data/activity_summary.json` is recalculated by summing the remaining active weekly files, rolling off activity older than 12 months without needing a full historical re-scan.
+- Each night at 02:17 UTC, the GitHub Actions workflow (`.github/workflows/sync_activity.yml`) queries the current ISO week of activity using GraphQL with cursor pagination.
+- The week's snapshot in `data/activity/` is updated idempotently, avoiding double-counting across runs. Reviews are deduplicated per merged pull request.
+- Snapshot files older than 52 weeks are pruned based on their ISO week filenames.
+- `data/activity_summary.json` is recalculated by summing the active weekly files with deterministically sorted keys, rolling off activity older than 12 months without requiring historical re-scans.

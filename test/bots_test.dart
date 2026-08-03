@@ -20,6 +20,8 @@ void main() {
       expect(isBot('reidbaker-agent'), isTrue);
       expect(isBot('gemini-code-assist'), isTrue);
       expect(isBot('gemini-code-assist[bot]'), isTrue);
+      expect(isBot('ghost'), isTrue);
+      expect(isBot('buildbot'), isTrue);
     });
 
     test('identifies pattern-based bot usernames', () {
@@ -28,10 +30,11 @@ void main() {
       expect(isBot('service[bot]'), isTrue);
       expect(isBot('flutter-autoroll'), isTrue);
       expect(isBot('custom-robot-account'), isTrue);
-      expect(isBot('buildbot'), isTrue);
     });
 
-    test('identifies human contributors as non-bots', () {
+    test(
+        'identifies human contributors as non-bots (including names ending in bot)',
+        () {
       expect(isBot('Piinks'), isFalse);
       expect(isBot('parlough'), isFalse);
       expect(isBot('AbdeMohlbi'), isFalse);
@@ -41,6 +44,12 @@ void main() {
       expect(isBot('ValentinVignal'), isFalse);
       expect(isBot('robert-ancell'), isFalse);
       expect(isBot('csells'), isFalse);
+      expect(isBot('talbot'), isFalse);
+      expect(isBot('abbot'), isFalse);
+      expect(isBot('chabot'), isFalse);
+      expect(isBot('BottlePumpkin'), isFalse);
+      expect(isBot('saibotma'), isFalse);
+      expect(isBot('Abbott-Deng'), isFalse);
     });
 
     test('handles whitespace and casing gracefully', () {

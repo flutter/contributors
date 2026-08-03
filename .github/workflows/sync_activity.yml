@@ -9,7 +9,7 @@ on:
       days:
         description: 'Number of past days of activity to sync'
         required: false
-        default: '1'
+        default: '7'
 
 permissions:
   contents: write
@@ -35,9 +35,10 @@ jobs:
 
       - name: Run activity sync
         env:
+          ORG_READ_TOKEN: ${{ secrets.ORG_READ_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DAYS: ${{ inputs.days || '1' }}
+          DAYS: ${{ inputs.days || '7' }}
         run: dart run tool/sync_activity.dart --days "$DAYS"
 
       - name: Commit and push changes
@@ -49,5 +50,6 @@ jobs:
             echo "No activity changes to commit."
           else
             git commit -m "chore: sync contributor activity data [skip ci]"
+            git pull --rebase origin main || true
             git push
           fi

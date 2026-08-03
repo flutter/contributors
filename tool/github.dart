@@ -1,17 +1,19 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:http/http.dart' as http;
-import 'bots.dart';
 
 /// Client for communicating with GitHub REST and GraphQL APIs across the Flutter organization.
 class GitHubClient {
-  GitHubClient({String? token}) : token = token ?? _resolveToken();
+  GitHubClient({String? token, http.Client? httpClient})
+      : token = token ?? _resolveToken(),
+        _httpClient = httpClient ?? http.Client();
 
   final String? token;
-  final http.Client _httpClient = http.Client();
+  final http.Client _httpClient;
 
   static String? _resolveToken() {
-    final envToken = Platform.environment['GITHUB_TOKEN'] ??
+    final envToken = Platform.environment['ORG_READ_TOKEN'] ??
+        Platform.environment['GITHUB_TOKEN'] ??
         Platform.environment['GH_TOKEN'];
     if (envToken != null && envToken.isNotEmpty) {
       return envToken;
@@ -54,10 +56,8 @@ class GitHubClient {
       final list = jsonDecode(response.body) as List;
       if (list.isEmpty) break;
       for (final item in list) {
-        final login = item['login'] as String;
-        if (!isBot(login)) {
-          members.add(login);
-        }
+        final login = (item as Map<String, dynamic>)['login'] as String;
+        members.add(login);
       }
       if (list.length < 100) break;
       page++;
@@ -84,10 +84,8 @@ class GitHubClient {
       final list = jsonDecode(response.body) as List;
       if (list.isEmpty) break;
       for (final item in list) {
-        final login = item['login'] as String;
-        if (!isBot(login)) {
-          members.add(login);
-        }
+        final login = (item as Map<String, dynamic>)['login'] as String;
+        members.add(login);
       }
       if (list.length < 100) break;
       page++;
@@ -124,8 +122,7 @@ class GitHubClient {
       'query': query,
       if (variables != null) 'variables': variables,
     });
-    final response =
-        await _httpClient.post(uri, headers: _headers, body: body);
+    final response = await _httpClient.post(uri, headers: _headers, body: body);
     if (response.statusCode != 200) {
       throw Exception(
           'GraphQL query failed (HTTP ${response.statusCode}): ${response.body}');
@@ -174,8 +171,7 @@ query(\$authored: String!, \$issues: String!, \$reviewed: String!) {
       'reviewed': reviewedQuery,
     });
 
-    final authoredCount =
-        data['authored']?['issueCount'] as int? ?? 0;
+    final authoredCount = data['authored']?['issueCount'] as int? ?? 0;
     final issuesCount = data['issues']?['issueCount'] as int? ?? 0;
     final reviewedCount = data['reviewed']?['issueCount'] as int? ?? 0;
     return {
@@ -225,12 +221,10 @@ query(\$authored: String!, \$issues: String!, \$reviewed: String!) {
         final data = await queryGraphQL(gqlBuffer.toString());
         for (var idx = 0; idx < batch.length; idx++) {
           final u = batch[idx];
-          final prCount =
-              data['u_${idx}_pr']?['issueCount'] as int? ?? 0;
+          final prCount = data['u_${idx}_pr']?['issueCount'] as int? ?? 0;
           final issuesCount =
               data['u_${idx}_issues']?['issueCount'] as int? ?? 0;
-          final revCount =
-              data['u_${idx}_rev']?['issueCount'] as int? ?? 0;
+          final revCount = data['u_${idx}_rev']?['issueCount'] as int? ?? 0;
           results[u] = {
             'merged_prs': prCount,
             'issues': issuesCount,
@@ -245,7 +239,12 @@ query(\$authored: String!, \$issues: String!, \$reviewed: String!) {
           try {
             results[u] = await getUserActivity(u, since: since, until: until);
           } catch (_) {
-            results[u] = {'merged_prs': 0, 'issues': 0, 'reviews': 0, 'total': 0};
+            results[u] = {
+              'merged_prs': 0,
+              'issues': 0,
+              'reviews': 0,
+              'total': 0
+            };
           }
         }
       }
