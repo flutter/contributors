@@ -8,8 +8,9 @@ Future<Set<String>> loadRobotsTeam(GitHubClient client) async {
   try {
     final members = await client.getTeamMembers('flutter', 'robots');
     _robotTeamMembers.addAll(members.map((m) => m.toLowerCase()));
-  } catch (_) {
+  } catch (e) {
     // Graceful fallback when running offline or without elevated team-read permissions
+    print('Notice: Could not load @flutter/robots team members: $e');
   }
   return _robotTeamMembers;
 }

@@ -63,8 +63,9 @@ int pruneOldActivityFiles(Directory activityDir, {DateTime? referenceDate}) {
         file.deleteSync();
         pruned++;
       }
-    } catch (_) {
+    } catch (e) {
       // Skip files that do not match the YYYY-Wxx format
+      print('Notice: Skipping unparseable activity file ${file.path}: $e');
     }
   }
 
@@ -319,8 +320,9 @@ void main(List<String> args) async {
       googlers = await client.getTeamMembers('flutter', 'googlers');
       partners = await client.getTeamMembers('flutter', 'partners');
       await loadRobotsTeam(client);
-    } catch (_) {
+    } catch (e) {
       // Elevated team read permissions may not be available with default GITHUB_TOKEN
+      print('Notice: Could not load maintainer/robot teams: $e');
     }
 
     final maintainers = {...googlers, ...partners};

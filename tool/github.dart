@@ -34,7 +34,10 @@ class GitHubClient {
         final t = (result.stdout as String).trim();
         if (t.isNotEmpty) return t;
       }
-    } catch (_) {}
+    } catch (e) {
+      // gh CLI not available or failed
+      print('Notice: GitHub CLI token lookup failed: $e');
+    }
     return null;
   }
 
@@ -320,7 +323,8 @@ query(\$authored: String!, \$issues: String!, \$reviewed: String!) {
         for (final u in batch) {
           try {
             results[u] = await getUserActivity(u, since: since, until: until);
-          } catch (_) {
+          } catch (e) {
+            print('Warning: Sequential activity fetch failed for user $u: $e');
             results[u] = {
               'merged_prs': 0,
               'issues': 0,
