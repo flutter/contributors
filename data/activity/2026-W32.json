@@ -157,9 +157,9 @@
   },
   "NH-Mason": {
     "merged_prs": 0,
-    "issues": 1,
+    "issues": 2,
     "reviews": 0,
-    "total": 1
+    "total": 2
   },
   "NurislamAiu": {
     "merged_prs": 0,
@@ -170,8 +170,8 @@
   "Piinks": {
     "merged_prs": 3,
     "issues": 0,
-    "reviews": 12,
-    "total": 15
+    "reviews": 13,
+    "total": 16
   },
   "QuncCccccc": {
     "merged_prs": 2,
@@ -336,10 +336,10 @@
     "total": 1
   },
   "chingjun": {
-    "merged_prs": 0,
+    "merged_prs": 1,
     "issues": 0,
     "reviews": 10,
-    "total": 10
+    "total": 11
   },
   "chunhtai": {
     "merged_prs": 1,
@@ -536,8 +536,8 @@
   "helin24": {
     "merged_prs": 6,
     "issues": 2,
-    "reviews": 10,
-    "total": 18
+    "reviews": 11,
+    "total": 19
   },
   "hellohuanlin": {
     "merged_prs": 0,
@@ -632,8 +632,8 @@
   "jtmcdole": {
     "merged_prs": 2,
     "issues": 5,
-    "reviews": 17,
-    "total": 24
+    "reviews": 18,
+    "total": 25
   },
   "juan-mora-google": {
     "merged_prs": 1,
@@ -725,6 +725,12 @@
     "reviews": 0,
     "total": 1
   },
+  "manvithgowda1231-web": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "matheusccastroo": {
     "merged_prs": 1,
     "issues": 0,
@@ -804,10 +810,10 @@
     "total": 19
   },
   "pq": {
-    "merged_prs": 3,
+    "merged_prs": 4,
     "issues": 1,
     "reviews": 16,
-    "total": 20
+    "total": 21
   },
   "pro100andrey": {
     "merged_prs": 0,
@@ -917,6 +923,12 @@
     "reviews": 0,
     "total": 1
   },
+  "svprdga": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "tarrinneal": {
     "merged_prs": 1,
     "issues": 0,
@@ -931,9 +943,9 @@
   },
   "tejasbhojane799-hash": {
     "merged_prs": 0,
-    "issues": 1,
+    "issues": 2,
     "reviews": 0,
-    "total": 1
+    "total": 2
   },
   "testrunnerci": {
     "merged_prs": 0,
