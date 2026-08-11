@@ -1,1 +1,308 @@
-{}
+{
+  "AbdeMohlbi": {
+    "merged_prs": 1,
+    "issues": 0,
+    "reviews": 0,
+    "total": 1
+  },
+  "CodeDoctorDE": {
+    "merged_prs": 0,
+    "issues": 0,
+    "reviews": 1,
+    "total": 1
+  },
+  "DanTup": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "JavadAsadi": {
+    "merged_prs": 1,
+    "issues": 0,
+    "reviews": 0,
+    "total": 1
+  },
+  "Jithin-Jude": {
+    "merged_prs": 1,
+    "issues": 0,
+    "reviews": 0,
+    "total": 1
+  },
+  "Piinks": {
+    "merged_prs": 1,
+    "issues": 0,
+    "reviews": 4,
+    "total": 5
+  },
+  "Renzo-Olivares": {
+    "merged_prs": 1,
+    "issues": 0,
+    "reviews": 1,
+    "total": 2
+  },
+  "Swiftaxe": {
+    "merged_prs": 0,
+    "issues": 0,
+    "reviews": 1,
+    "total": 1
+  },
+  "abdullah517": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "b-luk": {
+    "merged_prs": 1,
+    "issues": 0,
+    "reviews": 0,
+    "total": 1
+  },
+  "bdero": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "biggs0125": {
+    "merged_prs": 0,
+    "issues": 0,
+    "reviews": 1,
+    "total": 1
+  },
+  "bkonyi": {
+    "merged_prs": 2,
+    "issues": 0,
+    "reviews": 3,
+    "total": 5
+  },
+  "cbracken": {
+    "merged_prs": 10,
+    "issues": 2,
+    "reviews": 1,
+    "total": 13
+  },
+  "chingjun": {
+    "merged_prs": 0,
+    "issues": 0,
+    "reviews": 3,
+    "total": 3
+  },
+  "chunhtai": {
+    "merged_prs": 1,
+    "issues": 2,
+    "reviews": 0,
+    "total": 3
+  },
+  "conooi": {
+    "merged_prs": 0,
+    "issues": 0,
+    "reviews": 2,
+    "total": 2
+  },
+  "dkwingsmt": {
+    "merged_prs": 0,
+    "issues": 0,
+    "reviews": 1,
+    "total": 1
+  },
+  "flutter-zl": {
+    "merged_prs": 1,
+    "issues": 0,
+    "reviews": 0,
+    "total": 1
+  },
+  "gaaclarke": {
+    "merged_prs": 0,
+    "issues": 0,
+    "reviews": 1,
+    "total": 1
+  },
+  "glowvaiteam": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "gtaubman": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "helin24": {
+    "merged_prs": 0,
+    "issues": 0,
+    "reviews": 5,
+    "total": 5
+  },
+  "hellohuanlin": {
+    "merged_prs": 1,
+    "issues": 2,
+    "reviews": 10,
+    "total": 13
+  },
+  "ishaquehassan": {
+    "merged_prs": 1,
+    "issues": 0,
+    "reviews": 0,
+    "total": 1
+  },
+  "jeffwall-curlewlabs": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "jesskuras": {
+    "merged_prs": 1,
+    "issues": 0,
+    "reviews": 0,
+    "total": 1
+  },
+  "johnpryan": {
+    "merged_prs": 1,
+    "issues": 0,
+    "reviews": 0,
+    "total": 1
+  },
+  "jtmcdole": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 1,
+    "total": 2
+  },
+  "juan-mora-google": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "justinmc": {
+    "merged_prs": 1,
+    "issues": 0,
+    "reviews": 4,
+    "total": 5
+  },
+  "kentnguyen99": {
+    "merged_prs": 0,
+    "issues": 5,
+    "reviews": 0,
+    "total": 5
+  },
+  "kenzieschmoll": {
+    "merged_prs": 1,
+    "issues": 0,
+    "reviews": 1,
+    "total": 2
+  },
+  "kevmoo": {
+    "merged_prs": 1,
+    "issues": 0,
+    "reviews": 0,
+    "total": 1
+  },
+  "luis-calupet": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "mattkae": {
+    "merged_prs": 0,
+    "issues": 0,
+    "reviews": 2,
+    "total": 2
+  },
+  "mmohankrishna-lab": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "navaronbracke": {
+    "merged_prs": 1,
+    "issues": 0,
+    "reviews": 2,
+    "total": 3
+  },
+  "okorohelijah": {
+    "merged_prs": 2,
+    "issues": 0,
+    "reviews": 2,
+    "total": 4
+  },
+  "parlough": {
+    "merged_prs": 2,
+    "issues": 0,
+    "reviews": 1,
+    "total": 3
+  },
+  "pq": {
+    "merged_prs": 1,
+    "issues": 3,
+    "reviews": 5,
+    "total": 9
+  },
+  "ralph-bergmann": {
+    "merged_prs": 2,
+    "issues": 0,
+    "reviews": 0,
+    "total": 2
+  },
+  "ranbeuer": {
+    "merged_prs": 1,
+    "issues": 0,
+    "reviews": 0,
+    "total": 1
+  },
+  "reidbaker": {
+    "merged_prs": 0,
+    "issues": 0,
+    "reviews": 2,
+    "total": 2
+  },
+  "robert-ancell": {
+    "merged_prs": 2,
+    "issues": 0,
+    "reviews": 0,
+    "total": 2
+  },
+  "srawlins": {
+    "merged_prs": 0,
+    "issues": 0,
+    "reviews": 1,
+    "total": 1
+  },
+  "stuartmorgan-g": {
+    "merged_prs": 1,
+    "issues": 0,
+    "reviews": 2,
+    "total": 3
+  },
+  "tarrinneal": {
+    "merged_prs": 0,
+    "issues": 0,
+    "reviews": 1,
+    "total": 1
+  },
+  "vashworth": {
+    "merged_prs": 1,
+    "issues": 1,
+    "reviews": 3,
+    "total": 5
+  },
+  "victorsanni": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 1,
+    "total": 2
+  },
+  "visionbreathsolutions01": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  }
+}
