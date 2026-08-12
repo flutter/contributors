@@ -1296,10 +1296,10 @@
     "total": 2
   },
   "DanTup": {
-    "merged_prs": 3,
+    "merged_prs": 4,
     "issues": 3,
-    "reviews": 0,
-    "total": 6
+    "reviews": 1,
+    "total": 8
   },
   "Daniel-BD": {
     "merged_prs": 2,
@@ -1692,10 +1692,10 @@
     "total": 6
   },
   "FelixMittermeier": {
-    "merged_prs": 0,
+    "merged_prs": 1,
     "issues": 1,
     "reviews": 0,
-    "total": 1
+    "total": 2
   },
   "FengChendian": {
     "merged_prs": 0,
@@ -2009,6 +2009,12 @@
     "reviews": 0,
     "total": 1
   },
+  "GlazedBream": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "Goggxi": {
     "merged_prs": 0,
     "issues": 2,
@@ -2196,10 +2202,10 @@
     "total": 1
   },
   "Hari-07": {
-    "merged_prs": 6,
+    "merged_prs": 7,
     "issues": 5,
-    "reviews": 13,
-    "total": 24
+    "reviews": 14,
+    "total": 26
   },
   "Harpreet-ui": {
     "merged_prs": 0,
@@ -3128,8 +3134,8 @@
   "LouiseHsu": {
     "merged_prs": 25,
     "issues": 7,
-    "reviews": 95,
-    "total": 127
+    "reviews": 96,
+    "total": 128
   },
   "LuDColl": {
     "merged_prs": 0,
@@ -3247,9 +3253,9 @@
   },
   "MTtankkeo": {
     "merged_prs": 4,
-    "issues": 1,
+    "issues": 2,
     "reviews": 0,
-    "total": 5
+    "total": 6
   },
   "MUGHAL-PRlNCE": {
     "merged_prs": 0,
@@ -3806,8 +3812,8 @@
   "MuthuGCodes": {
     "merged_prs": 0,
     "issues": 0,
-    "reviews": 1,
-    "total": 1
+    "reviews": 3,
+    "total": 3
   },
   "Myk-edu": {
     "merged_prs": 0,
@@ -4302,10 +4308,10 @@
     "total": 1
   },
   "Piinks": {
-    "merged_prs": 6,
-    "issues": 0,
-    "reviews": 29,
-    "total": 35
+    "merged_prs": 7,
+    "issues": 2,
+    "reviews": 36,
+    "total": 45
   },
   "PioneerSwine996": {
     "merged_prs": 0,
@@ -4621,9 +4627,9 @@
   },
   "Razorex001": {
     "merged_prs": 0,
-    "issues": 3,
+    "issues": 4,
     "reviews": 0,
-    "total": 3
+    "total": 4
   },
   "Redchriss": {
     "merged_prs": 0,
@@ -6024,10 +6030,10 @@
     "total": 6
   },
   "Yusufihsangorgel": {
-    "merged_prs": 5,
+    "merged_prs": 6,
     "issues": 2,
     "reviews": 0,
-    "total": 7
+    "total": 8
   },
   "Yuval-Y1": {
     "merged_prs": 0,
@@ -7124,8 +7130,8 @@
   "andywolff": {
     "merged_prs": 26,
     "issues": 12,
-    "reviews": 40,
-    "total": 78
+    "reviews": 41,
+    "total": 79
   },
   "angelosilvestre": {
     "merged_prs": 0,
@@ -7718,8 +7724,8 @@
   "b-luk": {
     "merged_prs": 6,
     "issues": 1,
-    "reviews": 11,
-    "total": 18
+    "reviews": 13,
+    "total": 20
   },
   "b-ptn": {
     "merged_prs": 0,
@@ -7897,9 +7903,9 @@
   },
   "bdero": {
     "merged_prs": 6,
-    "issues": 7,
+    "issues": 9,
     "reviews": 2,
-    "total": 15
+    "total": 17
   },
   "bdlukaa": {
     "merged_prs": 0,
@@ -8082,10 +8088,10 @@
     "total": 3
   },
   "binSaed": {
-    "merged_prs": 0,
+    "merged_prs": 2,
     "issues": 1,
     "reviews": 0,
-    "total": 1
+    "total": 3
   },
   "bishal-railar": {
     "merged_prs": 0,
@@ -8118,10 +8124,10 @@
     "total": 2
   },
   "bkonyi": {
-    "merged_prs": 9,
+    "merged_prs": 17,
     "issues": 15,
-    "reviews": 18,
-    "total": 42
+    "reviews": 22,
+    "total": 54
   },
   "bksubhuti": {
     "merged_prs": 0,
@@ -8204,8 +8210,8 @@
   "bparrishMines": {
     "merged_prs": 0,
     "issues": 1,
-    "reviews": 1,
-    "total": 2
+    "reviews": 2,
+    "total": 3
   },
   "bpjhe": {
     "merged_prs": 0,
@@ -8426,8 +8432,8 @@
   "camsim99": {
     "merged_prs": 4,
     "issues": 3,
-    "reviews": 12,
-    "total": 19
+    "reviews": 13,
+    "total": 20
   },
   "captainGau": {
     "merged_prs": 0,
@@ -8472,10 +8478,10 @@
     "total": 1
   },
   "cbracken": {
-    "merged_prs": 45,
+    "merged_prs": 46,
     "issues": 8,
-    "reviews": 11,
-    "total": 64
+    "reviews": 13,
+    "total": 67
   },
   "cdeil": {
     "merged_prs": 7,
@@ -8594,8 +8600,8 @@
   "chingjun": {
     "merged_prs": 2,
     "issues": 0,
-    "reviews": 14,
-    "total": 16
+    "reviews": 18,
+    "total": 20
   },
   "chinmaygarde": {
     "merged_prs": 18,
@@ -8712,10 +8718,10 @@
     "total": 1
   },
   "chunhtai": {
-    "merged_prs": 4,
+    "merged_prs": 5,
     "issues": 2,
-    "reviews": 10,
-    "total": 16
+    "reviews": 11,
+    "total": 18
   },
   "cihati": {
     "merged_prs": 0,
@@ -8856,10 +8862,10 @@
     "total": 3
   },
   "conooi": {
-    "merged_prs": 2,
+    "merged_prs": 3,
     "issues": 0,
     "reviews": 11,
-    "total": 13
+    "total": 14
   },
   "copilot-pull-request-reviewer": {
     "merged_prs": 0,
@@ -8891,6 +8897,12 @@
     "reviews": 0,
     "total": 1
   },
+  "craiglabenz": {
+    "merged_prs": 0,
+    "issues": 0,
+    "reviews": 1,
+    "total": 1
+  },
   "crcdng": {
     "merged_prs": 0,
     "issues": 1,
@@ -8898,10 +8910,10 @@
     "total": 1
   },
   "creatorpiyush": {
-    "merged_prs": 0,
+    "merged_prs": 1,
     "issues": 1,
     "reviews": 0,
-    "total": 1
+    "total": 2
   },
   "crebuo": {
     "merged_prs": 0,
@@ -9324,10 +9336,10 @@
     "total": 1
   },
   "dcharkes": {
-    "merged_prs": 1,
-    "issues": 0,
+    "merged_prs": 2,
+    "issues": 1,
     "reviews": 2,
-    "total": 3
+    "total": 5
   },
   "ddi98": {
     "merged_prs": 0,
@@ -9800,8 +9812,8 @@
   "dkwingsmt": {
     "merged_prs": 5,
     "issues": 0,
-    "reviews": 6,
-    "total": 11
+    "reviews": 7,
+    "total": 12
   },
   "dkyncu": {
     "merged_prs": 0,
@@ -9823,9 +9835,9 @@
   },
   "dmitry-kotorov": {
     "merged_prs": 0,
-    "issues": 2,
+    "issues": 3,
     "reviews": 0,
-    "total": 2
+    "total": 3
   },
   "dmqj123": {
     "merged_prs": 0,
@@ -10172,8 +10184,8 @@
   "elliette": {
     "merged_prs": 7,
     "issues": 0,
-    "reviews": 6,
-    "total": 13
+    "reviews": 8,
+    "total": 15
   },
   "elmaxinet": {
     "merged_prs": 0,
@@ -10796,8 +10808,8 @@
   "flutter-zl": {
     "merged_prs": 3,
     "issues": 2,
-    "reviews": 3,
-    "total": 8
+    "reviews": 4,
+    "total": 9
   },
   "flutterone": {
     "merged_prs": 0,
@@ -10968,10 +10980,10 @@
     "total": 3
   },
   "gaaclarke": {
-    "merged_prs": 165,
+    "merged_prs": 167,
     "issues": 172,
-    "reviews": 641,
-    "total": 978
+    "reviews": 642,
+    "total": 981
   },
   "gabrielgarciagava": {
     "merged_prs": 0,
@@ -11141,6 +11153,12 @@
     "reviews": 0,
     "total": 2
   },
+  "gfx": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "gghh0408": {
     "merged_prs": 0,
     "issues": 8,
@@ -11215,9 +11233,9 @@
   },
   "gmackall": {
     "merged_prs": 84,
-    "issues": 22,
-    "reviews": 293,
-    "total": 399
+    "issues": 23,
+    "reviews": 295,
+    "total": 402
   },
   "gnayi-bit": {
     "merged_prs": 0,
@@ -11241,6 +11259,12 @@
     "merged_prs": 0,
     "issues": 1,
     "reviews": 0,
+    "total": 1
+  },
+  "goderbauer": {
+    "merged_prs": 0,
+    "issues": 0,
+    "reviews": 1,
     "total": 1
   },
   "golanshy": {
@@ -11302,6 +11326,12 @@
     "issues": 0,
     "reviews": 0,
     "total": 2
+  },
+  "gpraceman": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
   },
   "grafovdenis": {
     "merged_prs": 0,
@@ -11538,10 +11568,10 @@
     "total": 1
   },
   "hannah-hyj": {
-    "merged_prs": 1,
+    "merged_prs": 2,
     "issues": 0,
-    "reviews": 4,
-    "total": 5
+    "reviews": 5,
+    "total": 7
   },
   "hanskokx": {
     "merged_prs": 0,
@@ -11598,10 +11628,10 @@
     "total": 1
   },
   "harryterkelsen": {
-    "merged_prs": 4,
+    "merged_prs": 6,
     "issues": 3,
-    "reviews": 4,
-    "total": 11
+    "reviews": 7,
+    "total": 16
   },
   "harshadshehti-code": {
     "merged_prs": 0,
@@ -11629,9 +11659,9 @@
   },
   "hashirshoaeb": {
     "merged_prs": 0,
-    "issues": 2,
+    "issues": 3,
     "reviews": 0,
-    "total": 2
+    "total": 3
   },
   "hassan4000": {
     "merged_prs": 0,
@@ -11701,9 +11731,9 @@
   },
   "helin24": {
     "merged_prs": 17,
-    "issues": 3,
+    "issues": 4,
     "reviews": 30,
-    "total": 50
+    "total": 51
   },
   "helloalbin": {
     "merged_prs": 0,
@@ -11713,9 +11743,9 @@
   },
   "hellohuanlin": {
     "merged_prs": 4,
-    "issues": 6,
-    "reviews": 22,
-    "total": 32
+    "issues": 7,
+    "reviews": 26,
+    "total": 37
   },
   "helomri": {
     "merged_prs": 0,
@@ -12503,6 +12533,12 @@
     "reviews": 0,
     "total": 2
   },
+  "jacobsimionato": {
+    "merged_prs": 0,
+    "issues": 0,
+    "reviews": 2,
+    "total": 2
+  },
   "jaggernod": {
     "merged_prs": 0,
     "issues": 1,
@@ -12618,10 +12654,10 @@
     "total": 1
   },
   "jason-simmons": {
-    "merged_prs": 9,
+    "merged_prs": 10,
     "issues": 1,
-    "reviews": 7,
-    "total": 17
+    "reviews": 8,
+    "total": 19
   },
   "jatin-trydigitalsolution": {
     "merged_prs": 0,
@@ -12794,8 +12830,8 @@
   "jesskuras": {
     "merged_prs": 6,
     "issues": 0,
-    "reviews": 12,
-    "total": 18
+    "reviews": 14,
+    "total": 20
   },
   "jesswrd": {
     "merged_prs": 87,
@@ -12832,6 +12868,12 @@
     "issues": 0,
     "reviews": 0,
     "total": 2
+  },
+  "jiahaog": {
+    "merged_prs": 0,
+    "issues": 0,
+    "reviews": 1,
+    "total": 1
   },
   "jiajingchenjj-ai": {
     "merged_prs": 0,
@@ -13009,9 +13051,9 @@
   },
   "johnpryan": {
     "merged_prs": 5,
-    "issues": 2,
-    "reviews": 5,
-    "total": 12
+    "issues": 3,
+    "reviews": 6,
+    "total": 14
   },
   "johnwiese-ms": {
     "merged_prs": 0,
@@ -13189,9 +13231,9 @@
   },
   "jtmcdole": {
     "merged_prs": 6,
-    "issues": 8,
-    "reviews": 25,
-    "total": 39
+    "issues": 9,
+    "reviews": 28,
+    "total": 43
   },
   "juan-campuzano": {
     "merged_prs": 0,
@@ -13254,10 +13296,10 @@
     "total": 1
   },
   "justinmc": {
-    "merged_prs": 5,
-    "issues": 4,
-    "reviews": 32,
-    "total": 41
+    "merged_prs": 7,
+    "issues": 5,
+    "reviews": 33,
+    "total": 45
   },
   "justnmichael333-dev": {
     "merged_prs": 0,
@@ -13561,15 +13603,15 @@
   },
   "kentnguyen99": {
     "merged_prs": 0,
-    "issues": 662,
+    "issues": 663,
     "reviews": 0,
-    "total": 662
+    "total": 663
   },
   "kenzieschmoll": {
-    "merged_prs": 15,
+    "merged_prs": 16,
     "issues": 4,
-    "reviews": 5,
-    "total": 24
+    "reviews": 6,
+    "total": 26
   },
   "kerberjg": {
     "merged_prs": 0,
@@ -13602,10 +13644,10 @@
     "total": 1
   },
   "kevmoo": {
-    "merged_prs": 8,
+    "merged_prs": 9,
     "issues": 7,
     "reviews": 2,
-    "total": 17
+    "total": 18
   },
   "keyvez": {
     "merged_prs": 0,
@@ -13632,10 +13674,10 @@
     "total": 7
   },
   "khanak0509": {
-    "merged_prs": 4,
+    "merged_prs": 5,
     "issues": 0,
     "reviews": 0,
-    "total": 4
+    "total": 5
   },
   "khandeshijatin7-ops": {
     "merged_prs": 0,
@@ -14052,10 +14094,10 @@
     "total": 1
   },
   "lamek": {
-    "merged_prs": 3,
+    "merged_prs": 5,
     "issues": 0,
     "reviews": 4,
-    "total": 7
+    "total": 9
   },
   "lankasarathkumar": {
     "merged_prs": 0,
@@ -14297,6 +14339,12 @@
     "reviews": 0,
     "total": 1
   },
+  "linzj": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "littleGnAl": {
     "merged_prs": 3,
     "issues": 6,
@@ -14414,8 +14462,8 @@
   "loic-sharma": {
     "merged_prs": 0,
     "issues": 1,
-    "reviews": 12,
-    "total": 13
+    "reviews": 13,
+    "total": 14
   },
   "lologarithm": {
     "merged_prs": 0,
@@ -14472,6 +14520,12 @@
     "total": 2
   },
   "lshaoshuai": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "luanbatistadenga": {
     "merged_prs": 0,
     "issues": 1,
     "reviews": 0,
@@ -15128,8 +15182,8 @@
   "mboetger": {
     "merged_prs": 6,
     "issues": 1,
-    "reviews": 2,
-    "total": 9
+    "reviews": 3,
+    "total": 10
   },
   "mchudy": {
     "merged_prs": 0,
@@ -15156,10 +15210,10 @@
     "total": 5
   },
   "mdebbar": {
-    "merged_prs": 2,
+    "merged_prs": 4,
     "issues": 0,
-    "reviews": 6,
-    "total": 8
+    "reviews": 9,
+    "total": 13
   },
   "mdichi": {
     "merged_prs": 0,
@@ -16068,10 +16122,10 @@
     "total": 26
   },
   "nateshmbhat": {
-    "merged_prs": 9,
+    "merged_prs": 10,
     "issues": 4,
     "reviews": 0,
-    "total": 13
+    "total": 14
   },
   "nathannewyen": {
     "merged_prs": 3,
@@ -16111,9 +16165,9 @@
   },
   "navaronbracke": {
     "merged_prs": 39,
-    "issues": 22,
-    "reviews": 225,
-    "total": 286
+    "issues": 23,
+    "reviews": 227,
+    "total": 289
   },
   "naved997": {
     "merged_prs": 0,
@@ -16464,10 +16518,10 @@
     "total": 1
   },
   "okorohelijah": {
-    "merged_prs": 3,
+    "merged_prs": 4,
     "issues": 3,
-    "reviews": 5,
-    "total": 11
+    "reviews": 7,
+    "total": 14
   },
   "olischne": {
     "merged_prs": 0,
@@ -16682,8 +16736,8 @@
   "parlough": {
     "merged_prs": 14,
     "issues": 1,
-    "reviews": 18,
-    "total": 33
+    "reviews": 19,
+    "total": 34
   },
   "parnic": {
     "merged_prs": 0,
@@ -17004,10 +17058,10 @@
     "total": 1
   },
   "polina-c": {
-    "merged_prs": 1,
+    "merged_prs": 3,
     "issues": 0,
     "reviews": 0,
-    "total": 1
+    "total": 3
   },
   "poojasalunkhe671": {
     "merged_prs": 0,
@@ -17323,9 +17377,9 @@
   },
   "rajveermalviya": {
     "merged_prs": 1,
-    "issues": 3,
+    "issues": 4,
     "reviews": 0,
-    "total": 4
+    "total": 5
   },
   "ralph-bergmann": {
     "merged_prs": 2,
@@ -17455,9 +17509,9 @@
   },
   "reidbaker": {
     "merged_prs": 1,
-    "issues": 0,
-    "reviews": 21,
-    "total": 22
+    "issues": 2,
+    "reviews": 23,
+    "total": 26
   },
   "reinar": {
     "merged_prs": 1,
@@ -17695,9 +17749,9 @@
   },
   "robertosw": {
     "merged_prs": 0,
-    "issues": 1,
+    "issues": 2,
     "reviews": 0,
-    "total": 1
+    "total": 2
   },
   "robindijkhof": {
     "merged_prs": 0,
@@ -18719,6 +18773,12 @@
     "reviews": 0,
     "total": 1
   },
+  "sigurdm": {
+    "merged_prs": 2,
+    "issues": 0,
+    "reviews": 0,
+    "total": 2
+  },
   "silent-flamingo": {
     "merged_prs": 0,
     "issues": 1,
@@ -19016,8 +19076,8 @@
   "srawlins": {
     "merged_prs": 3,
     "issues": 0,
-    "reviews": 15,
-    "total": 18
+    "reviews": 18,
+    "total": 21
   },
   "sreevishnuqa": {
     "merged_prs": 0,
@@ -19154,8 +19214,8 @@
   "stuartmorgan-g": {
     "merged_prs": 5,
     "issues": 3,
-    "reviews": 9,
-    "total": 17
+    "reviews": 11,
+    "total": 19
   },
   "stucdio": {
     "merged_prs": 0,
@@ -19466,8 +19526,8 @@
   "tarrinneal": {
     "merged_prs": 1,
     "issues": 0,
-    "reviews": 2,
-    "total": 3
+    "reviews": 3,
+    "total": 4
   },
   "tarunshri": {
     "merged_prs": 0,
@@ -20184,10 +20244,10 @@
     "total": 2
   },
   "vashworth": {
-    "merged_prs": 4,
+    "merged_prs": 6,
     "issues": 12,
-    "reviews": 7,
-    "total": 23
+    "reviews": 8,
+    "total": 26
   },
   "vasilevzhivko": {
     "merged_prs": 0,
@@ -20264,8 +20324,8 @@
   "victorsanni": {
     "merged_prs": 0,
     "issues": 1,
-    "reviews": 5,
-    "total": 6
+    "reviews": 6,
+    "total": 7
   },
   "vijayshankarrealdeal": {
     "merged_prs": 0,
@@ -20790,10 +20850,10 @@
     "total": 1
   },
   "xRossKoh": {
-    "merged_prs": 0,
+    "merged_prs": 1,
     "issues": 1,
     "reviews": 0,
-    "total": 1
+    "total": 2
   },
   "xVemu": {
     "merged_prs": 4,
