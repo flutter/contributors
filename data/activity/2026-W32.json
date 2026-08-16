@@ -29,6 +29,12 @@
     "reviews": 0,
     "total": 1
   },
+  "CodeAlex78": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "ColeSpringer": {
     "merged_prs": 1,
     "issues": 0,
@@ -102,12 +108,6 @@
     "total": 1
   },
   "Joyatou": {
-    "merged_prs": 0,
-    "issues": 1,
-    "reviews": 0,
-    "total": 1
-  },
-  "Jshekwu": {
     "merged_prs": 0,
     "issues": 1,
     "reviews": 0,
