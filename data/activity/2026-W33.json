@@ -71,6 +71,12 @@
     "reviews": 1,
     "total": 3
   },
+  "Ibrahim-Ali0786": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "JavadAsadi": {
     "merged_prs": 2,
     "issues": 0,
@@ -179,6 +185,12 @@
     "reviews": 0,
     "total": 1
   },
+  "YoshitakeTani": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "Yusufihsangorgel": {
     "merged_prs": 2,
     "issues": 0,
@@ -233,6 +245,12 @@
     "reviews": 0,
     "total": 1
   },
+  "aynbasha3-arch": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "b-luk": {
     "merged_prs": 1,
     "issues": 0,
@@ -244,6 +262,12 @@
     "issues": 3,
     "reviews": 0,
     "total": 3
+  },
+  "ben-milanko": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
   },
   "biggs0125": {
     "merged_prs": 0,
@@ -258,10 +282,10 @@
     "total": 2
   },
   "bkonyi": {
-    "merged_prs": 26,
-    "issues": 0,
+    "merged_prs": 27,
+    "issues": 4,
     "reviews": 11,
-    "total": 37
+    "total": 42
   },
   "boiOne": {
     "merged_prs": 0,
@@ -299,6 +323,12 @@
     "reviews": 5,
     "total": 22
   },
+  "chaeMil": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "chinahzlh": {
     "merged_prs": 0,
     "issues": 1,
@@ -310,6 +340,12 @@
     "issues": 0,
     "reviews": 11,
     "total": 12
+  },
+  "chintangujaratipelsoftlabs": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
   },
   "chunhtai": {
     "merged_prs": 3,
@@ -387,6 +423,12 @@
     "merged_prs": 0,
     "issues": 0,
     "reviews": 1,
+    "total": 1
+  },
+  "ferraridamiano": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
     "total": 1
   },
   "flar": {
@@ -707,6 +749,12 @@
     "reviews": 6,
     "total": 9
   },
+  "nekwo": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "nuramehamedenderis": {
     "merged_prs": 0,
     "issues": 2,
@@ -842,8 +890,8 @@
   "srawlins": {
     "merged_prs": 2,
     "issues": 0,
-    "reviews": 18,
-    "total": 20
+    "reviews": 19,
+    "total": 21
   },
   "stuartmorgan-g": {
     "merged_prs": 1,
@@ -880,6 +928,12 @@
     "issues": 2,
     "reviews": 9,
     "total": 16
+  },
+  "vedamayank": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
   },
   "victorsanni": {
     "merged_prs": 3,
