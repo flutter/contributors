@@ -168,10 +168,10 @@
     "total": 1
   },
   "Rusino": {
-    "merged_prs": 0,
+    "merged_prs": 1,
     "issues": 0,
     "reviews": 1,
-    "total": 1
+    "total": 2
   },
   "Ruzo": {
     "merged_prs": 0,
@@ -233,6 +233,12 @@
     "reviews": 5,
     "total": 13
   },
+  "arodriguez47": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "b-luk": {
     "merged_prs": 2,
     "issues": 0,
@@ -264,10 +270,10 @@
     "total": 2
   },
   "bkonyi": {
-    "merged_prs": 30,
+    "merged_prs": 31,
     "issues": 0,
     "reviews": 7,
-    "total": 37
+    "total": 38
   },
   "bparrishMines": {
     "merged_prs": 1,
@@ -317,6 +323,12 @@
     "reviews": 0,
     "total": 1
   },
+  "cedvdb": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "chingjun": {
     "merged_prs": 0,
     "issues": 0,
@@ -352,6 +364,12 @@
     "issues": 1,
     "reviews": 0,
     "total": 2
+  },
+  "cxx1234": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
   },
   "damywise": {
     "merged_prs": 0,
@@ -484,6 +502,12 @@
     "issues": 3,
     "reviews": 0,
     "total": 4
+  },
+  "gulomovh473-design": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
   },
   "harryterkelsen": {
     "merged_prs": 4,
@@ -677,11 +701,17 @@
     "reviews": 0,
     "total": 1
   },
+  "li-jia-nan": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "loic-sharma": {
     "merged_prs": 0,
     "issues": 0,
-    "reviews": 6,
-    "total": 6
+    "reviews": 7,
+    "total": 7
   },
   "manu-sncf": {
     "merged_prs": 1,
@@ -722,8 +752,8 @@
   "mdebbar": {
     "merged_prs": 3,
     "issues": 1,
-    "reviews": 9,
-    "total": 13
+    "reviews": 10,
+    "total": 14
   },
   "meliharik": {
     "merged_prs": 1,
