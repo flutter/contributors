@@ -1211,6 +1211,12 @@
     "reviews": 0,
     "total": 1
   },
+  "Crdzbird": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "Creeper19472": {
     "merged_prs": 0,
     "issues": 1,
@@ -11581,9 +11587,9 @@
   },
   "helin24": {
     "merged_prs": 32,
-    "issues": 9,
+    "issues": 10,
     "reviews": 47,
-    "total": 88
+    "total": 89
   },
   "hellohuanlin": {
     "merged_prs": 6,
@@ -13639,9 +13645,9 @@
   },
   "koji-1009": {
     "merged_prs": 7,
-    "issues": 1,
+    "issues": 2,
     "reviews": 0,
-    "total": 8
+    "total": 9
   },
   "komakur": {
     "merged_prs": 0,
@@ -16141,9 +16147,9 @@
   },
   "nnovation": {
     "merged_prs": 0,
-    "issues": 1,
+    "issues": 2,
     "reviews": 0,
-    "total": 1
+    "total": 2
   },
   "noacavalcante": {
     "merged_prs": 0,
@@ -19783,9 +19789,9 @@
   },
   "treeplate": {
     "merged_prs": 0,
-    "issues": 2,
+    "issues": 3,
     "reviews": 0,
-    "total": 2
+    "total": 3
   },
   "tridaxdev": {
     "merged_prs": 1,
@@ -20356,6 +20362,12 @@
     "issues": 2,
     "reviews": 0,
     "total": 2
+  },
+  "wajipu": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
   },
   "walley892": {
     "merged_prs": 3,

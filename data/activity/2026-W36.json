@@ -41,6 +41,12 @@
     "reviews": 0,
     "total": 1
   },
+  "Crdzbird": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "DanTup": {
     "merged_prs": 0,
     "issues": 0,
@@ -469,9 +475,9 @@
   },
   "helin24": {
     "merged_prs": 4,
-    "issues": 1,
+    "issues": 2,
     "reviews": 0,
-    "total": 5
+    "total": 6
   },
   "hellohuanlin": {
     "merged_prs": 0,
@@ -617,6 +623,12 @@
     "reviews": 0,
     "total": 1
   },
+  "koji-1009": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "kryali": {
     "merged_prs": 1,
     "issues": 0,
@@ -720,6 +732,12 @@
     "total": 4
   },
   "nielsenko": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "nnovation": {
     "merged_prs": 0,
     "issues": 1,
     "reviews": 0,
@@ -839,6 +857,12 @@
     "reviews": 1,
     "total": 2
   },
+  "treeplate": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "vasek-broz": {
     "merged_prs": 0,
     "issues": 1,
@@ -866,6 +890,12 @@
   "voledyaev": {
     "merged_prs": 1,
     "issues": 0,
+    "reviews": 0,
+    "total": 1
+  },
+  "wajipu": {
+    "merged_prs": 0,
+    "issues": 1,
     "reviews": 0,
     "total": 1
   },
