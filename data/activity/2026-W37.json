@@ -59,6 +59,12 @@
     "reviews": 0,
     "total": 1
   },
+  "ItsVeridian": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "JakeThomson": {
     "merged_prs": 0,
     "issues": 1,
@@ -204,6 +210,12 @@
     "total": 2
   },
   "abhishek-shj": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "achintsetia": {
     "merged_prs": 0,
     "issues": 1,
     "reviews": 0,
@@ -719,6 +731,12 @@
     "reviews": 0,
     "total": 1
   },
+  "narumi147": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "nateshmbhat": {
     "merged_prs": 1,
     "issues": 1,
@@ -727,9 +745,9 @@
   },
   "navaronbracke": {
     "merged_prs": 0,
-    "issues": 3,
+    "issues": 4,
     "reviews": 4,
-    "total": 7
+    "total": 8
   },
   "okorohelijah": {
     "merged_prs": 1,
