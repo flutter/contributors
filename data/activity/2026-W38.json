@@ -1,4 +1,10 @@
 {
+  "Adam-Langley": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "AlexV525": {
     "merged_prs": 0,
     "issues": 1,
@@ -143,6 +149,12 @@
     "reviews": 0,
     "total": 1
   },
+  "Matkurban": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "MeGaurav4": {
     "merged_prs": 1,
     "issues": 0,
@@ -179,6 +191,12 @@
     "reviews": 0,
     "total": 1
   },
+  "Pante": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "Piinks": {
     "merged_prs": 3,
     "issues": 0,
@@ -186,6 +204,12 @@
     "total": 16
   },
   "PraveenGangula1392": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "QueerNet": {
     "merged_prs": 0,
     "issues": 1,
     "reviews": 0,
@@ -253,9 +277,9 @@
   },
   "Xelorium": {
     "merged_prs": 1,
-    "issues": 0,
+    "issues": 1,
     "reviews": 0,
-    "total": 1
+    "total": 2
   },
   "a-urel": {
     "merged_prs": 0,
@@ -276,6 +300,12 @@
     "total": 1
   },
   "adambeer": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "alexei-g-aloteq": {
     "merged_prs": 0,
     "issues": 1,
     "reviews": 0,
@@ -336,10 +366,10 @@
     "total": 22
   },
   "bparrishMines": {
-    "merged_prs": 4,
+    "merged_prs": 6,
     "issues": 0,
     "reviews": 5,
-    "total": 9
+    "total": 11
   },
   "cbracken": {
     "merged_prs": 1,
@@ -455,6 +485,12 @@
     "reviews": 0,
     "total": 1
   },
+  "felixengstrom": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "felixmanojh": {
     "merged_prs": 0,
     "issues": 1,
@@ -499,9 +535,9 @@
   },
   "gh365": {
     "merged_prs": 0,
-    "issues": 1,
+    "issues": 2,
     "reviews": 0,
-    "total": 1
+    "total": 2
   },
   "gkirkendall": {
     "merged_prs": 0,
@@ -538,6 +574,12 @@
     "issues": 3,
     "reviews": 0,
     "total": 3
+  },
+  "hp-paoneking": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
   },
   "iam-abhijha": {
     "merged_prs": 1,
@@ -914,8 +956,8 @@
   "stuartmorgan-g": {
     "merged_prs": 7,
     "issues": 4,
-    "reviews": 13,
-    "total": 24
+    "reviews": 15,
+    "total": 26
   },
   "szakarias": {
     "merged_prs": 1,
@@ -948,6 +990,12 @@
     "total": 1
   },
   "tide1109": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "tim-bitflinger": {
     "merged_prs": 0,
     "issues": 1,
     "reviews": 0,
