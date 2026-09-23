@@ -509,6 +509,12 @@
     "reviews": 0,
     "total": 1
   },
+  "flar": {
+    "merged_prs": 0,
+    "issues": 0,
+    "reviews": 1,
+    "total": 1
+  },
   "flutter-zl": {
     "merged_prs": 2,
     "issues": 0,
