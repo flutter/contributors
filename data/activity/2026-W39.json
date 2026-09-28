@@ -65,6 +65,12 @@
     "reviews": 0,
     "total": 1
   },
+  "HanySameh": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "Ianrisch": {
     "merged_prs": 0,
     "issues": 1,
@@ -246,6 +252,12 @@
     "total": 1
   },
   "aslanahmed318-pixel": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "auroraxo": {
     "merged_prs": 0,
     "issues": 1,
     "reviews": 0,
@@ -607,9 +619,9 @@
   },
   "kevmoo": {
     "merged_prs": 13,
-    "issues": 0,
+    "issues": 1,
     "reviews": 3,
-    "total": 16
+    "total": 17
   },
   "khanak0509": {
     "merged_prs": 1,
@@ -793,9 +805,9 @@
   },
   "ralph-bergmann": {
     "merged_prs": 1,
-    "issues": 0,
+    "issues": 1,
     "reviews": 0,
-    "total": 1
+    "total": 2
   },
   "ranbeuer": {
     "merged_prs": 1,
@@ -865,9 +877,9 @@
   },
   "snowflysky": {
     "merged_prs": 0,
-    "issues": 1,
+    "issues": 2,
     "reviews": 0,
-    "total": 1
+    "total": 2
   },
   "sorensp-goog": {
     "merged_prs": 1,
@@ -892,6 +904,12 @@
     "issues": 1,
     "reviews": 7,
     "total": 13
+  },
+  "supomarlo": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
   },
   "szakarias": {
     "merged_prs": 4,
