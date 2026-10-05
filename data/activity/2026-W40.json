@@ -683,6 +683,12 @@
     "reviews": 0,
     "total": 1
   },
+  "josh-audio": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "jtmcdole": {
     "merged_prs": 4,
     "issues": 2,
@@ -709,9 +715,9 @@
   },
   "kaluli123123": {
     "merged_prs": 1,
-    "issues": 5,
+    "issues": 10,
     "reviews": 0,
-    "total": 6
+    "total": 11
   },
   "keertip": {
     "merged_prs": 0,
@@ -834,6 +840,12 @@
     "total": 18
   },
   "minchanpark": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "mudassir-cpp": {
     "merged_prs": 0,
     "issues": 1,
     "reviews": 0,
@@ -1052,6 +1064,12 @@
   "usamaaelgendy": {
     "merged_prs": 1,
     "issues": 0,
+    "reviews": 0,
+    "total": 1
+  },
+  "valentingrigorean": {
+    "merged_prs": 0,
+    "issues": 1,
     "reviews": 0,
     "total": 1
   },
