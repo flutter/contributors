@@ -42,6 +42,8 @@ const Set<String> knownBots = {
   'renovate',
   'renovate[bot]',
   'flutteractionsbot',
+  'flutter-pub-roller-bot',
+  'flutter-skills-sync-bot',
   'flutter-website-bot',
   'flutter-intellij-kokoro',
   'fluttercerberus',

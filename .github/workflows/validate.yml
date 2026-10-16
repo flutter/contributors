@@ -5,6 +5,7 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -32,7 +33,7 @@ jobs:
         run: dart format --output=none --set-exit-if-changed .
 
       - name: Analyze Dart code
-        run: dart analyze
+        run: dart analyze --fatal-infos
 
       - name: Run unit test suite
         run: dart test
