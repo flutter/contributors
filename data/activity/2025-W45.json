@@ -17,12 +17,6 @@
     "reviews": 0,
     "total": 3
   },
-  "auto-submit": {
-    "merged_prs": 4,
-    "issues": 0,
-    "reviews": 0,
-    "total": 4
-  },
   "autorejecttop": {
     "merged_prs": 1,
     "issues": 0,

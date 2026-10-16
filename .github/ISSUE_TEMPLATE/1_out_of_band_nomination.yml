@@ -1,0 +1,69 @@
+name: Out-of-Band Ladder Nomination
+description: For existing organization members to nominate a new hire, partner engineer, or propose an off-cycle promotion.
+title: "[Nomination]: @username for <Role>"
+labels: ["nomination", "out-of-band"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Out-of-Band Ladder Nomination
+        > [!NOTE]
+        > Standard promotions and new joiner invitations occur automatically during our data-driven **Quarterly Reviews**.
+        > Creating new issues and pull requests in `flutter/contributors` is restricted to organization members (`collaborators`); use this form as a sponsor for out-of-band additions (e.g. new Google/Partner hires) or expedited off-cycle role adjustments.
+
+  - type: input
+    id: candidate
+    attributes:
+      label: Candidate GitHub Handle
+      description: The GitHub username of the person being nominated.
+      placeholder: "@octocat"
+    validations:
+      required: true
+
+  - type: input
+    id: discord
+    attributes:
+      label: Candidate Discord Username
+      description: The candidate's Discord username so we can grant them the team member role and channel access on the Flutter Discord server.
+      placeholder: "octocat"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: proposed_role
+    attributes:
+      label: Proposed Role
+      options:
+        - Maintainer (Flutter / Partners Team)
+        - Committer (Expedited Promotion)
+        - Reviewer (New Org Contributor)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: affiliation
+    attributes:
+      label: Candidate Team / Domain
+      options:
+        - Flutter Team
+        - Partners Team (@flutter/partners)
+        - Community Contributor
+    validations:
+      required: true
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: Contribution Summary & Justification
+      description: Provide background on the candidate's responsibilities, relevant merged PRs, reviews, or team role verification.
+      placeholder: "Candidate is joining the Flutter team as an engine maintainer..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: sponsor_confirm
+    attributes:
+      label: Sponsor Confirmation
+      options:
+        - label: I am an active Flutter organization member nominating this candidate.
+          required: true
