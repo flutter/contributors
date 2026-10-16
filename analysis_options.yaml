@@ -5,3 +5,15 @@ analyzer:
     strict-casts: true
     strict-inference: true
     strict-raw-types: true
+
+linter:
+  rules:
+    - always_declare_return_types
+    - directives_ordering
+    - discarded_futures
+    - omit_local_variable_types
+    - only_throw_errors
+    - prefer_final_in_for_each
+    - prefer_final_locals
+    - prefer_single_quotes
+    - unawaited_futures

@@ -6125,12 +6125,6 @@
     "reviews": 0,
     "total": 3
   },
-  "agentfu": {
-    "merged_prs": 0,
-    "issues": 1,
-    "reviews": 3,
-    "total": 4
-  },
   "agrahariak": {
     "merged_prs": 0,
     "issues": 1,
@@ -7162,12 +7156,6 @@
     "issues": 1,
     "reviews": 0,
     "total": 1
-  },
-  "auto-submit": {
-    "merged_prs": 63,
-    "issues": 0,
-    "reviews": 0,
-    "total": 63
   },
   "autorejecttop": {
     "merged_prs": 7,

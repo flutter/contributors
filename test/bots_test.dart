@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
 import 'package:test/test.dart';
@@ -99,6 +100,22 @@ void main() {
       final gh = GitHubClient(token: 'test', httpClient: mockClient);
       await loadRobotTeams(gh);
       expect(isBot('dynamic-team-robot-account'), isTrue);
+    });
+
+    test('knownBots in tool/bots.dart stays in sync with references/bots.txt',
+        () {
+      final botsFile =
+          File('.agents/skills/quarterly-ladder-analysis/references/bots.txt');
+      expect(botsFile.existsSync(), isTrue);
+      final fileBots = botsFile
+          .readAsLinesSync()
+          .map((l) => l.trim())
+          .where((l) => l.isNotEmpty && !l.startsWith('#'))
+          .toSet();
+      expect(knownBots, equals(fileBots));
+      for (final bot in fileBots) {
+        expect(isExcludedAccount(bot), isTrue);
+      }
     });
   });
 }

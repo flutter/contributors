@@ -92,6 +92,7 @@ void recomputeActivitySummary(Directory activityDir, {File? outputFile}) {
           jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
       for (final entry in content.entries) {
         final user = entry.key;
+        if (isExcludedAccount(user)) continue;
         final stats = entry.value as Map<String, dynamic>;
         summary.putIfAbsent(
             user,

@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:test/test.dart';
+import '../tool/bots.dart';
 
 void main() {
   group('Dataset Integrity', () {
@@ -25,6 +26,9 @@ void main() {
           final stats = entry.value as Map<String, dynamic>;
 
           expect(user, isNotEmpty);
+          expect(isExcludedAccount(user), isFalse,
+              reason:
+                  'Excluded bot or ghost account "$user" found in ${file.path}');
           final mergedPrs = stats['merged_prs'] as int?;
           final issues = stats['issues'] as int?;
           final reviews = stats['reviews'] as int?;
@@ -91,6 +95,9 @@ void main() {
 
       for (final entry in expectedTotals.entries) {
         final user = entry.key;
+        expect(isExcludedAccount(user), isFalse,
+            reason:
+                'Excluded bot or ghost account "$user" found in activity_summary.json');
         final expected = entry.value;
         final actual = summaryContent[user] as Map<String, dynamic>?;
 
