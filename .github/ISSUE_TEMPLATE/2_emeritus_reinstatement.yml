@@ -1,0 +1,57 @@
+name: Dasher Emeritus Reinstatement Request
+description: For active organization members to sponsor a returning Dasher Emeritus rejoining the active contributor ladder off-cycle.
+title: "[Reinstatement]: @username returning to active status"
+labels: ["emeritus-reinstatement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Dasher Emeritus Reinstatement
+        > [!NOTE]
+        > Returning Dasher Emeriti who reach $\ge 10$ contributions are **automatically identified** during our data-driven **Quarterly Reviews**.
+        > Because creating new issues and pull requests in `flutter/contributors` is restricted to organization members (`collaborators`), off-cycle reinstatement requests must be opened by an active Flutter organization member acting as a sponsor (returning Emeriti can request a sponsor in `#hidden-chat` on Discord).
+
+  - type: input
+    id: username
+    attributes:
+      label: Emeritus GitHub Handle
+      description: The GitHub username of the returning Dasher Emeritus being sponsored for reinstatement.
+      placeholder: "@octocat"
+    validations:
+      required: true
+
+  - type: input
+    id: discord
+    attributes:
+      label: Emeritus Discord Username (if updated)
+      description: Dasher Emeriti retain Discord and Google Group access. Please provide their Discord username in case it has changed or needs to be updated in our records.
+      placeholder: "octocat"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: requested_role
+    attributes:
+      label: Requested Ladder Role
+      options:
+        - Reviewer (@flutter/reviewers)
+        - Committer (@flutter/committers)
+    validations:
+      required: true
+
+  - type: textarea
+    id: recent_activity
+    attributes:
+      label: Recent Contributions
+      description: List recent pull requests, reviews, or triage activity since the Dasher Emeritus resumed contributing.
+      placeholder: "Links to recent PRs, issues, or reviews..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: sponsor_confirm
+    attributes:
+      label: Sponsor Confirmation
+      options:
+        - label: I am an active Flutter organization member sponsoring this Dasher Emeritus for reinstatement.
+          required: true

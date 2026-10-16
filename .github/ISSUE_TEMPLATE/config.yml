@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Flutter Contributor Ladder Guide
+    url: https://github.com/flutter/contributors/blob/main/docs/LADDER.md
+    about: Read about contributor tiers, criteria, responsibilities, and advancement pathways.
+  - name: Quarterly Review Process & Appeals
+    url: https://github.com/flutter/contributors/blob/main/docs/QUARTERLY_REVIEW.md
+    about: Learn how quarterly contributor reviews are conducted and how appeals are processed.
+  - name: Governance & Communication Channels
+    url: https://github.com/flutter/contributors/blob/main/docs/GOVERNANCE.md
+    about: Learn about GitHub teams, Discord channels, and onboarding to the announcement-only contributor Google Group.
