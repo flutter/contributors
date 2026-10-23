@@ -1,0 +1,891 @@
+# Flutter Contributor Ladder Roster
+# Source of truth for Flutter contributor roles and permissions.
+# Last updated: 2026-07-30
+
+maintainers:
+  # Maintainers on the Flutter team (@flutter/googlers and @flutter/partners)
+  # Granted Write access + Org Moderation
+  googlers:
+    - username: CarlosMendonca
+      role: maintainer
+    - username: ChristianEdwardPadilla
+      role: maintainer
+    - username: GemmaJAy
+      role: maintainer
+    - username: InMatrix
+      role: maintainer
+    - username: LongCatIsLooong
+      role: maintainer
+    - username: LouiseHsu
+      role: maintainer
+    - username: MaryaBelanger
+      role: maintainer
+    - username: Piinks
+      role: maintainer
+    - username: QuncCccccc
+      role: maintainer
+    - username: Renzo-Olivares
+      role: maintainer
+    - username: Rusino
+      role: maintainer
+    - username: aam
+      role: maintainer
+    - username: abdallahshaban557
+      role: maintainer
+    - username: alexmarkov
+      role: maintainer
+    - username: amcasari
+      role: maintainer
+    - username: ananci
+      role: maintainer
+    - username: andrewkolos
+      role: maintainer
+    - username: andywolff
+      role: maintainer
+    - username: another-rex
+      role: maintainer
+    - username: antfitch
+      role: maintainer
+    - username: apwilson
+      role: maintainer
+    - username: arbreng
+      role: maintainer
+    - username: athomas
+      role: maintainer
+    - username: b-luk
+      role: maintainer
+    - username: biggs0125
+      role: maintainer
+    - username: bkonyi
+      role: maintainer
+    - username: bparrishMines
+      role: maintainer
+    - username: brianquinlan
+      role: maintainer
+    - username: bwilkerson
+      role: maintainer
+    - username: camsim99
+      role: maintainer
+    - username: caroqliu
+      role: maintainer
+    - username: catharp
+      role: maintainer
+    - username: cbracken
+      role: maintainer
+    - username: chandarrengoog
+      role: maintainer
+    - username: chaselatta
+      role: maintainer
+    - username: chingjun
+      role: maintainer
+    - username: chloestefantsova
+      role: maintainer
+    - username: chunhtai
+      role: maintainer
+    - username: cj-radcliff
+      role: maintainer
+    - username: cligh
+      role: maintainer
+    - username: conooi
+      role: maintainer
+    - username: cpsloal
+      role: maintainer
+    - username: craiglabenz
+      role: maintainer
+    - username: dcharkes
+      role: maintainer
+    - username: di
+      role: maintainer
+    - username: ditman
+      role: maintainer
+    - username: dkwingsmt
+      role: maintainer
+    - username: domesticmouse
+      role: maintainer
+    - username: dsmcl
+      role: maintainer
+    - username: dustingreen
+      role: maintainer
+    - username: elliette
+      role: maintainer
+    - username: emckean
+      role: maintainer
+    - username: ericwindmill
+      role: maintainer
+    - username: essjay05
+      role: maintainer
+    - username: everyplace
+      role: maintainer
+    - username: eyebrowsoffire
+      role: maintainer
+    - username: flar
+      role: maintainer
+    - username: flutter-zl
+      role: maintainer
+    - username: gaaclarke
+      role: maintainer
+    - username: gitrey
+      role: maintainer
+    - username: gmackall
+      role: maintainer
+    - username: goderbauer
+      role: maintainer
+    - username: grouma
+      role: maintainer
+    - username: gspencergoog
+      role: maintainer
+    - username: guidezpl
+      role: maintainer
+    - username: hannah-hyj
+      role: maintainer
+    - username: harryterkelsen
+      role: maintainer
+    - username: helin24
+      role: maintainer
+    - username: hellohuanlin
+      role: maintainer
+    - username: ievdokdm
+      role: maintainer
+    - username: iinozemtsev
+      role: maintainer
+    - username: inferno-chromium
+      role: maintainer
+    - username: itsjustkevin
+      role: maintainer
+    - username: jacob314
+      role: maintainer
+    - username: jacobsimionato
+      role: maintainer
+    - username: jaeheon
+      role: maintainer
+    - username: jakemac53
+      role: maintainer
+    - username: jalseth
+      role: maintainer
+    - username: jason-simmons
+      role: maintainer
+    - username: jensjoha
+      role: maintainer
+    - username: jesswrd
+      role: maintainer
+    - username: jfschmakeit
+      role: maintainer
+    - username: jiahaog
+      role: maintainer
+    - username: jmagman
+      role: maintainer
+    - username: joefspiro
+      role: maintainer
+    - username: johnmccutchan
+      role: maintainer
+    - username: johnniwinther
+      role: maintainer
+    - username: johnpryan
+      role: maintainer
+    - username: johnsonmh
+      role: maintainer
+    - username: jonasfj
+      role: maintainer
+    - username: jonathanmetzman
+      role: maintainer
+    - username: joshualitt
+      role: maintainer
+    - username: jq129398
+      role: maintainer
+    - username: jrwang
+      role: maintainer
+    - username: jtmcdole
+      role: maintainer
+    - username: justinmc
+      role: maintainer
+    - username: jwill
+      role: maintainer
+    - username: jwren
+      role: maintainer
+    - username: jyameo
+      role: maintainer
+    - username: kallentu
+      role: maintainer
+    - username: keertip
+      role: maintainer
+    - username: kenzieschmoll
+      role: maintainer
+    - username: kevmoo
+      role: maintainer
+    - username: khanhnwin
+      role: maintainer
+    - username: kjlubick
+      role: maintainer
+    - username: lamek
+      role: maintainer
+    - username: leafpetersen
+      role: maintainer
+    - username: liamappelbe
+      role: maintainer
+    - username: loic-sharma
+      role: maintainer
+    - username: mariamhas
+      role: maintainer
+    - username: maryx
+      role: maintainer
+    - username: mboetger
+      role: maintainer
+    - username: mbrase
+      role: maintainer
+    - username: mdebbar
+      role: maintainer
+    - username: miguelfrde
+      role: maintainer
+    - username: mit-mit
+      role: maintainer
+    - username: mkustermann
+      role: maintainer
+    - username: mosuem
+      role: maintainer
+    - username: mraleph
+      role: maintainer
+    - username: munificent
+      role: maintainer
+    - username: nan-yu
+      role: maintainer
+    - username: natebosch
+      role: maintainer
+    - username: nickyringland
+      role: maintainer
+    - username: nshahan
+      role: maintainer
+    - username: nuritzi
+      role: maintainer
+    - username: okorohelijah
+      role: maintainer
+    - username: oliverchang
+      role: maintainer
+    - username: omerlevran46
+      role: maintainer
+    - username: peixinli
+      role: maintainer
+    - username: pennzht
+      role: maintainer
+    - username: polina-c
+      role: maintainer
+    - username: pq
+      role: maintainer
+    - username: precision
+      role: maintainer
+    - username: redbrogdon
+      role: maintainer
+    - username: reidbaker
+      role: maintainer
+    - username: renaudd
+      role: maintainer
+    - username: renyou
+      role: maintainer
+    - username: rmacnak-google
+      role: maintainer
+    - username: rodydavis
+      role: maintainer
+    - username: rspier
+      role: maintainer
+    - username: scheglov
+      role: maintainer
+    - username: sethladd
+      role: maintainer
+    - username: sfshaza2
+      role: maintainer
+    - username: sgnagnarella
+      role: maintainer
+    - username: shanecglass
+      role: maintainer
+    - username: sigmundch
+      role: maintainer
+    - username: sigurdm
+      role: maintainer
+    - username: sokoloff06
+      role: maintainer
+    - username: srawlins
+      role: maintainer
+    - username: srujzs
+      role: maintainer
+    - username: sstrickl
+      role: maintainer
+    - username: stef-luo
+      role: maintainer
+    - username: stereotype441
+      role: maintainer
+    - username: stevemessick
+      role: maintainer
+    - username: stuartmorgan-g
+      role: maintainer
+    - username: studgeek
+      role: maintainer
+    - username: suertreus
+      role: maintainer
+    - username: szakarias
+      role: maintainer
+    - username: tarobins
+      role: maintainer
+    - username: tarrinneal
+      role: maintainer
+    - username: tasnim-khan
+      role: maintainer
+    - username: thagomizer
+      role: maintainer
+    - username: timothyhoang-google
+      role: maintainer
+    - username: twerske
+      role: maintainer
+    - username: uysalere
+      role: maintainer
+    - username: vashworth
+      role: maintainer
+    - username: victorsanni
+      role: maintainer
+    - username: vivahome2
+      role: maintainer
+    - username: vsmenon
+      role: maintainer
+    - username: walley892
+      role: maintainer
+    - username: xster
+      role: maintainer
+    - username: yjbanov
+      role: maintainer
+    - username: zanderso
+      role: maintainer
+    - username: zhenqiu1101
+      role: maintainer
+    - username: zijiehe-google-com
+      role: maintainer
+    - username: zoeyfan
+      role: maintainer
+  partners:
+    - username: DanTup
+      team: "@flutter/partners"
+      role: maintainer
+    - username: Hixie
+      team: "@flutter/partners"
+      role: maintainer
+    - username: Saviq
+      team: "@flutter/canonical"
+      role: maintainer
+    - username: bdero
+      team: "@flutter/flutter_gpu"
+      role: maintainer
+    - username: danxorzum
+      team: "@flutter/virtusa"
+      role: maintainer
+    - username: dkbharti-glitch
+      team: "@flutter/techm"
+      role: maintainer
+    - username: jokerttu
+      team: "@flutter/codemate"
+      role: maintainer
+    - username: juan-mora-google
+      team: "@flutter/virtusa"
+      role: maintainer
+    - username: knopp
+      team: "@flutter/canonical"
+      role: maintainer
+    - username: mattkae
+      team: "@flutter/canonical"
+      role: maintainer
+    - username: mbcorona
+      team: "@flutter/tcs"
+      role: maintainer
+    - username: mikaelkomu
+      team: "@flutter/codemate"
+      role: maintainer
+    - username: muralikrishmt
+      team: "@flutter/techm"
+      role: maintainer
+    - username: parlough
+      team: "@flutter/partners"
+      role: maintainer
+    - username: paul-geoghegan
+      team: "@flutter/canonical"
+      role: maintainer
+    - username: preethi0228-git
+      team: "@flutter/tcs"
+      role: maintainer
+    - username: puneetkukreja98
+      team: "@flutter/tcs"
+      role: maintainer
+    - username: ranbeuer
+      team: "@flutter/virtusa"
+      role: maintainer
+    - username: robert-ancell
+      team: "@flutter/canonical"
+      role: maintainer
+    - username: samuli-codemate
+      team: "@flutter/codemate"
+      role: maintainer
+    - username: saurabh-mirajkar
+      team: "@flutter/tcs"
+      role: maintainer
+    - username: schultek
+      team: "@flutter/partners"
+      role: maintainer
+    - username: suryaKommana2662
+      team: "@flutter/tcs"
+      role: maintainer
+    - username: utopicnarwhal
+      team: "@flutter/codemate"
+      role: maintainer
+
+committers:
+  # Members of @flutter/committers (Child of @flutter/flutter-hackers)
+  # Granted GitHub Write role / merge access
+  - username: AbdeMohlbi
+    role: committer
+  - username: ValentinVignal
+    role: committer
+  - username: bleroux
+    role: committer
+  - username: davidhicks980
+    role: committer
+  - username: huycozy
+    role: committer
+  - username: ksokolovskyi
+    role: committer
+  - username: navaronbracke
+    role: committer
+  - username: rkishan516
+    role: committer
+  - username: vickyduran
+    role: committer
+
+reviewers:
+  # Members of @flutter/reviewers (Child of @flutter/flutter-hackers)
+  # Granted GitHub Triage role
+  - username: AlexV525
+    role: reviewer
+  - username: Hari-07
+    role: reviewer
+  - username: Jhon-Aires
+    role: reviewer
+  - username: RobertOdrowaz
+    role: reviewer
+  - username: csells
+    role: reviewer
+  - username: danagbemava-nc
+    role: reviewer
+  - username: htrolle-epam
+    grace_until: "2027-10-14"
+    role: reviewer
+  - username: kentnguyen99
+    role: reviewer
+  - username: piedcipher
+    role: reviewer
+  - username: tirth-patel-nc
+    role: reviewer
+
+dash_emeritus:
+  # Honored alumni (External, non-org members on GitHub)
+  - username: 0xZOne
+    role: emeritus
+  - username: 324mao
+    role: emeritus
+  - username: ANTONINEUTRON
+    role: emeritus
+  - username: AnnaPS
+    role: emeritus
+  - username: AntonyKiragu
+    role: emeritus
+  - username: AustinGTI
+    role: emeritus
+  - username: AyushBherwani1998
+    role: emeritus
+  - username: BerkSpar
+    role: emeritus
+  - username: CareF
+    role: emeritus
+  - username: CoffeeDevUK
+    role: emeritus
+  - username: ColdPaleLight
+    role: emeritus
+  - username: DBowen33
+    role: emeritus
+  - username: DiegoGW
+    role: emeritus
+  - username: Ehesp
+    role: emeritus
+  - username: FXschwartz
+    role: emeritus
+  - username: FirentisTFW
+    role: emeritus
+  - username: FlutterIssues
+    role: emeritus
+  - username: HidenoriMatsubayashi
+    role: emeritus
+  - username: Hiroaki-Kanai
+    role: emeritus
+  - username: IanSimpson
+    role: emeritus
+  - username: JErazo7
+    role: emeritus
+  - username: Jan-Stepien
+    role: emeritus
+  - username: JsouLiang
+    role: emeritus
+  - username: Justian-SopraSteria
+    role: emeritus
+  - username: Kirpal
+    role: emeritus
+  - username: KristinBi
+    role: emeritus
+  - username: LinXunFeng
+    role: emeritus
+  - username: MacarenaSantos
+    role: emeritus
+  - username: Markzipan
+    role: emeritus
+  - username: MaruQuarky
+    role: emeritus
+  - username: MauriPastorini
+    role: emeritus
+  - username: Menshoz
+    role: emeritus
+  - username: MrUnfunny
+    role: emeritus
+  - username: MuthuGCodes
+    role: emeritus
+  - username: PoojaB26
+    role: emeritus
+  - username: QMAshfaqAli
+    role: emeritus
+  - username: Rexios80
+    role: emeritus
+  - username: Salakar
+    role: emeritus
+  - username: SenseiMinimal
+    role: emeritus
+  - username: SofiaRey
+    role: emeritus
+  - username: Swiftaxe
+    role: emeritus
+  - username: TimoPieti
+    role: emeritus
+  - username: Vanethos
+    role: emeritus
+  - username: YeungKC
+    role: emeritus
+  - username: Zudah228
+    role: emeritus
+  - username: a14n
+    role: emeritus
+  - username: aaron-sf
+    role: emeritus
+  - username: adarshprabhu
+    role: emeritus
+  - username: adicahyono
+    role: emeritus
+  - username: akrwb
+    role: emeritus
+  - username: albertodev01
+    role: emeritus
+  - username: alestiago
+    role: emeritus
+  - username: allisonryan0002
+    role: emeritus
+  - username: almasryalyoum
+    role: emeritus
+  - username: alxp1982
+    role: emeritus
+  - username: anderdobo
+    role: emeritus
+  - username: antonellof
+    role: emeritus
+  - username: atrope
+    role: emeritus
+  - username: azchohfi
+    role: emeritus
+  - username: bartekpacia
+    role: emeritus
+  - username: bernaferrari
+    role: emeritus
+  - username: brianegan
+    role: emeritus
+  - username: bruno-garcia
+    role: emeritus
+  - username: bselwe
+    role: emeritus
+  - username: btobin
+    role: emeritus
+  - username: budikhafiKLY
+    role: emeritus
+  - username: burakkasikci
+    role: emeritus
+  - username: chenglu
+    role: emeritus
+  - username: chinmoy12c
+    role: emeritus
+  - username: chriscraws
+    role: emeritus
+  - username: chrisraygill
+    role: emeritus
+  - username: cityxsuperapp
+    role: emeritus
+  - username: collinjackson
+    role: emeritus
+  - username: dam-ease
+    role: emeritus
+  - username: darshankawar
+    role: emeritus
+  - username: dclark-disney
+    role: emeritus
+  - username: diarmaidlindsay
+    role: emeritus
+  - username: diegoveloper
+    role: emeritus
+  - username: djol
+    role: emeritus
+  - username: dominikIncibit
+    role: emeritus
+  - username: eda-nagao
+    role: emeritus
+  - username: eggfly
+    role: emeritus
+  - username: egoe
+    role: emeritus
+  - username: eieio
+    role: emeritus
+  - username: emma-roudabush-disney
+    role: emeritus
+  - username: emrebuyukozkan
+    role: emeritus
+  - username: ened
+    role: emeritus
+  - username: enzoftware
+    role: emeritus
+  - username: erickzanardo
+    role: emeritus
+  - username: eseidel
+    role: emeritus
+  - username: exaby73
+    role: emeritus
+  - username: farshad1489
+    role: emeritus
+  - username: felangel
+    role: emeritus
+  - username: filiph
+    role: emeritus
+  - username: fma-goog
+    role: emeritus
+  - username: gastonliz
+    role: emeritus
+  - username: gianfrancopapa
+    role: emeritus
+  - username: gnprice
+    role: emeritus
+  - username: guoguo338
+    role: emeritus
+  - username: h9jiang
+    role: emeritus
+  - username: hamdikahloun
+    role: emeritus
+  - username: harri35
+    role: emeritus
+  - username: hbatagelo
+    role: emeritus
+  - username: helinanever
+    role: emeritus
+  - username: hgraceb
+    role: emeritus
+  - username: hillelcoren
+    role: emeritus
+  - username: horiaciu
+    role: emeritus
+  - username: ihorkozar
+    role: emeritus
+  - username: irmasantoso
+    role: emeritus
+  - username: itsjen
+    role: emeritus
+  - username: ja-dfir
+    role: emeritus
+  - username: jcollins-disney
+    role: emeritus
+  - username: jeroen-meijer
+    role: emeritus
+  - username: jesskuras
+    role: emeritus
+  - username: jingshao-code
+    role: emeritus
+  - username: jnschulze
+    role: emeritus
+  - username: jomblocoder
+    role: emeritus
+  - username: jorgecoca
+    role: emeritus
+  - username: josemontespg
+    role: emeritus
+  - username: jpnurmi
+    role: emeritus
+  - username: jwinarske
+    role: emeritus
+  - username: kaiceyd
+    role: emeritus
+  - username: kenvandine
+    role: emeritus
+  - username: kevinburns426
+    role: emeritus
+  - username: kevya-google
+    role: emeritus
+  - username: kinla004
+    role: emeritus
+  - username: kkboateng
+    role: emeritus
+  - username: kmillikin
+    role: emeritus
+  - username: kokoro-team
+    role: emeritus
+  - username: kondoakio
+    role: emeritus
+  - username: kwg4
+    role: emeritus
+  - username: laramartin
+    role: emeritus
+  - username: leoafarias
+    role: emeritus
+  - username: linxuebin1990
+    role: emeritus
+  - username: lucavenir
+    role: emeritus
+  - username: luckysmg
+    role: emeritus
+  - username: magicianA
+    role: emeritus
+  - username: maheshj01
+    role: emeritus
+  - username: martinduva
+    role: emeritus
+  - username: marwfair
+    role: emeritus
+  - username: matiasleyba
+    role: emeritus
+  - username: matsuda-shota
+    role: emeritus
+  - username: matthew-carroll
+    role: emeritus
+  - username: matthewshahi
+    role: emeritus
+  - username: mattmartelnz
+    role: emeritus
+  - username: maxp89
+    role: emeritus
+  - username: mchudy
+    role: emeritus
+  - username: mhadaily
+    role: emeritus
+  - username: michaelkedar
+    role: emeritus
+  - username: milezabaleta
+    role: emeritus
+  - username: miquelbeltran
+    role: emeritus
+  - username: moffatman
+    role: emeritus
+  - username: msangalli
+    role: emeritus
+  - username: mvanbeusekom
+    role: emeritus
+  - username: nikosportolos
+    role: emeritus
+  - username: nirunirosha401-personal
+    role: emeritus
+  - username: noboru-i
+    role: emeritus
+  - username: nt4f04uNd
+    role: emeritus
+  - username: okursoftware
+    role: emeritus
+  - username: omartinma
+    role: emeritus
+  - username: omatt
+    role: emeritus
+  - username: pedromassango
+    role: emeritus
+  - username: pingbird
+    role: emeritus
+  - username: rahulan
+    role: emeritus
+  - username: rajayogan
+    role: emeritus
+  - username: renefloor
+    role: emeritus
+  - username: rzambroni
+    role: emeritus
+  - username: scarletteliza
+    role: emeritus
+  - username: scutlight
+    role: emeritus
+  - username: shirbayat
+    role: emeritus
+  - username: simpson-peter
+    role: emeritus
+  - username: slightfoot
+    role: emeritus
+  - username: snikiche
+    role: emeritus
+  - username: spideythewebhead
+    role: emeritus
+  - username: spjass
+    role: emeritus
+  - username: spratt-disney
+    role: emeritus
+  - username: ssmitienko
+    role: emeritus
+  - username: sushanthmshetty
+    role: emeritus
+  - username: swavkulinski
+    role: emeritus
+  - username: tanercc
+    role: emeritus
+  - username: tcannon-disney
+    role: emeritus
+  - username: tfabacher-dp
+    role: emeritus
+  - username: tgucio
+    role: emeritus
+  - username: thekorn
+    role: emeritus
+  - username: thkim1011
+    role: emeritus
+  - username: tomgilder
+    role: emeritus
+  - username: tpiaggio
+    role: emeritus
+  - username: trevorplant
+    role: emeritus
+  - username: tsurumotokdi
+    role: emeritus
+  - username: udayon
+    role: emeritus
+  - username: vaind
+    role: emeritus
+  - username: valentinallavayol
+    role: emeritus
+  - username: wakita181009
+    role: emeritus
+  - username: wangying3426
+    role: emeritus
+  - username: werainkhatri
+    role: emeritus
+  - username: whesse
+    role: emeritus
+  - username: wolfenrain
+    role: emeritus
+  - username: workerbee22
+    role: emeritus
+  - username: wprater
+    role: emeritus
+  - username: xm0128
+    role: emeritus
+  - username: xu-baolin
+    role: emeritus
+  - username: yiiim
+    role: emeritus
+  - username: ymgn-dev
+    role: emeritus
+  - username: zhongwuzw
+    role: emeritus

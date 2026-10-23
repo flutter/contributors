@@ -1,4 +1,4 @@
-// Copyright 2014 The Flutter Authors. All rights reserved.
+// Copyright 2026 The Flutter Authors.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
@@ -7,7 +7,7 @@ import 'package:test/test.dart';
 
 String _generateLicense(String prefix) {
   return '''
-${prefix}Copyright 2014 The Flutter Authors. All rights reserved.
+${prefix}Copyright 2026 The Flutter Authors.
 ${prefix}Use of this source code is governed by a BSD-style license that can be
 ${prefix}found in the LICENSE file.''';
 }
