@@ -39,6 +39,12 @@ jobs:
       - name: Analyze Dart code
         run: dart analyze --fatal-infos
 
+      - name: Validate contributors.yaml
+        run: dart run tool/validate_roster.dart
+
+      - name: Verify ROSTER.md and EMERITUS.md are in sync
+        run: dart run tool/generate_roster.dart --check
+
       - name: Run unit test suite
         run: dart test
 
