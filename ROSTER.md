@@ -78,7 +78,7 @@ Committers hold GitHub Write permissions (merge rights) and provide authoritativ
 | :--- | :--- | :--- | :--- |
 | @AbdeMohlbi | [github.com/AbdeMohlbi](https://github.com/AbdeMohlbi) | 138 | 236 |
 | @huycozy | [github.com/huycozy](https://github.com/huycozy) | 11 | 33 |
-| @JavadAsadi | [github.com/JavadAsadi](https://github.com/JavadAsadi) | 42 | 48 |
+| @JavadAsadi | [github.com/JavadAsadi](https://github.com/JavadAsadi) | 43 | 49 |
 | @ksokolovskyi | [github.com/ksokolovskyi](https://github.com/ksokolovskyi) | 21 | 34 |
 | @Mairramer | [github.com/Mairramer](https://github.com/Mairramer) | 28 | 43 |
 | @navaronbracke | [github.com/navaronbracke](https://github.com/navaronbracke) | 43 | 334 |

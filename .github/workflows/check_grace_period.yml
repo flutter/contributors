@@ -1,0 +1,45 @@
+name: Weekly Grace Period Check
+
+on:
+  schedule:
+    # 03:23 UTC every Monday (Weekly check for open quarterly review issues, offset from top of hour)
+    - cron: '23 3 * * 1'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (do not post comments or add labels)'
+        type: boolean
+        default: false
+
+permissions: {}
+
+concurrency:
+  group: check-grace-period
+  cancel-in-progress: false
+
+jobs:
+  grace_period_check:
+    name: Check Open Quarterly Review Issues
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Dart SDK
+        uses: dart-lang/setup-dart@e51d8e571e22473a2ddebf0ef8a2123f0ab2c02c # v1.7.1
+
+      - name: Install dependencies
+        run: dart pub get
+
+      - name: Check Open Quarterly Review Issues
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run || false }}
+        run: dart run tool/check_grace_period.dart
