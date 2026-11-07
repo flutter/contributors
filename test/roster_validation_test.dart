@@ -202,9 +202,18 @@ dash_emeritus:
         final emeritusFile = File('${tempDir.path}/EMERITUS.md');
 
         yamlFile.writeAsStringSync('''
+# Flutter Contributor Ladder Roster
+# Last updated: 2026-10-27
+
 maintainers:
   googlers:
     - username: Piinks
+      role: maintainer
+    - username: m2
+      role: maintainer
+    - username: m3
+      role: maintainer
+    - username: m4
       role: maintainer
   partners:
     - username: robert-ancell
@@ -226,12 +235,24 @@ dash_emeritus:
         summaryFile.writeAsStringSync(
             '{"alice": {"merged_prs": 15, "total": 40}, "bob": {"merged_prs": 3, "total": 12}}');
 
-        final parsedYaml = loadYaml(yamlFile.readAsStringSync()) as YamlMap;
+        final rawYaml = yamlFile.readAsStringSync();
+        expect(extractLastUpdated(rawYaml), equals('2026-10-27'));
+        expect(extractLastUpdated('maintainers: {}'), isNull);
+
+        final parsedYaml = loadYaml(rawYaml) as YamlMap;
         expect(validateContributorsYaml(parsedYaml), isEmpty);
         expect(buildRosterMarkdown(parsedYaml, {}),
             contains('## Committers (`@flutter/committers`)'));
         expect(
             buildEmeritusMarkdown(parsedYaml), contains('# Dasher Emeritus'));
+
+        final gridRows = formatGridRows(['u1', 'u2', 'u3', 'u4', 'u5']);
+        expect(gridRows, hasLength(2));
+        expect(gridRows[0].endsWith(' •'), isTrue,
+            reason:
+                'Non-final grid rows must end with " •" so soft line wraps still render a separator');
+        expect(gridRows[1].endsWith(' •'), isFalse,
+            reason: 'Final grid row must not end with a trailing separator');
 
         // --check should fail before ROSTER.md and EMERITUS.md exist
         final checkBefore = Process.runSync('dart', [
@@ -267,7 +288,12 @@ dash_emeritus:
         expect(emeritusFile.existsSync(), isTrue);
 
         final rosterMd = rosterFile.readAsStringSync();
+        expect(rosterMd, contains('**Last updated:** 2026-10-27'));
         expect(rosterMd, contains('[@Piinks](https://github.com/Piinks)'));
+        expect(
+            rosterMd,
+            contains(
+                '[@Piinks](https://github.com/Piinks) •\n[@robert-ancell]'));
         expect(rosterMd,
             contains('[@robert-ancell](https://github.com/robert-ancell)'));
         expect(
@@ -277,6 +303,7 @@ dash_emeritus:
         expect(rosterMd, isNot(contains('Prospective new joiners')));
 
         final emeritusMd = emeritusFile.readAsStringSync();
+        expect(emeritusMd, contains('**Last updated:** 2026-10-27'));
         expect(emeritusMd,
             contains('[@formerDasher](https://github.com/formerDasher)'));
         expect(emeritusMd, contains('https://github.com/flutter/rfc'));
@@ -296,6 +323,44 @@ dash_emeritus:
           emeritusFile.path,
         ]);
         expect(checkAfter.exitCode, equals(0));
+
+        // --check should continue to pass when activity_summary.json advances
+        // during nightly syncs between roster updates
+        summaryFile.writeAsStringSync(
+            '{"alice": {"merged_prs": 19, "total": 52}, "bob": {"merged_prs": 4, "total": 16}}');
+        final checkAfterActivitySync = Process.runSync('dart', [
+          'run',
+          'tool/generate_roster.dart',
+          '--check',
+          '--contributors',
+          yamlFile.path,
+          '--summary',
+          summaryFile.path,
+          '--roster',
+          rosterFile.path,
+          '--emeritus',
+          emeritusFile.path,
+        ]);
+        expect(checkAfterActivitySync.exitCode, equals(0));
+
+        // --check should fail if `Last updated` changes in contributors.yaml
+        // without regenerating ROSTER.md and EMERITUS.md
+        yamlFile.writeAsStringSync(
+            rawYaml.replaceFirst('2026-10-27', '2026-11-06'));
+        final checkAfterDateChange = Process.runSync('dart', [
+          'run',
+          'tool/generate_roster.dart',
+          '--check',
+          '--contributors',
+          yamlFile.path,
+          '--summary',
+          summaryFile.path,
+          '--roster',
+          rosterFile.path,
+          '--emeritus',
+          emeritusFile.path,
+        ]);
+        expect(checkAfterDateChange.exitCode, equals(1));
       } finally {
         tempDir.deleteSync(recursive: true);
       }
