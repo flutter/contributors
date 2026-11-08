@@ -71,11 +71,17 @@
     "reviews": 0,
     "total": 1
   },
-  "LongCatIsLooong": {
+  "LahaLuhem": {
     "merged_prs": 0,
+    "issues": 2,
+    "reviews": 0,
+    "total": 2
+  },
+  "LongCatIsLooong": {
+    "merged_prs": 1,
     "issues": 1,
     "reviews": 2,
-    "total": 3
+    "total": 4
   },
   "LouiseHsu": {
     "merged_prs": 2,
@@ -89,6 +95,12 @@
     "reviews": 0,
     "total": 1
   },
+  "Mairramer": {
+    "merged_prs": 1,
+    "issues": 0,
+    "reviews": 0,
+    "total": 1
+  },
   "Manish1Pandey": {
     "merged_prs": 0,
     "issues": 2,
@@ -97,9 +109,9 @@
   },
   "MarlonJD": {
     "merged_prs": 1,
-    "issues": 0,
+    "issues": 1,
     "reviews": 0,
-    "total": 1
+    "total": 2
   },
   "Mathvdias": {
     "merged_prs": 1,
@@ -215,6 +227,12 @@
     "reviews": 0,
     "total": 7
   },
+  "ZhengHaoF": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "abdallahshaban557": {
     "merged_prs": 0,
     "issues": 0,
@@ -302,8 +320,8 @@
   "chunhtai": {
     "merged_prs": 3,
     "issues": 1,
-    "reviews": 4,
-    "total": 8
+    "reviews": 5,
+    "total": 9
   },
   "cj-radcliff": {
     "merged_prs": 0,
@@ -361,9 +379,9 @@
   },
   "dkwingsmt": {
     "merged_prs": 0,
-    "issues": 0,
+    "issues": 1,
     "reviews": 4,
-    "total": 4
+    "total": 5
   },
   "doutatsu": {
     "merged_prs": 0,
@@ -374,8 +392,8 @@
   "elliette": {
     "merged_prs": 2,
     "issues": 4,
-    "reviews": 15,
-    "total": 21
+    "reviews": 16,
+    "total": 22
   },
   "ericwindmill": {
     "merged_prs": 0,
@@ -472,6 +490,12 @@
     "issues": 0,
     "reviews": 6,
     "total": 8
+  },
+  "hanskokx": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
   },
   "harryterkelsen": {
     "merged_prs": 6,
@@ -637,9 +661,9 @@
   },
   "kevmoo": {
     "merged_prs": 5,
-    "issues": 0,
+    "issues": 1,
     "reviews": 1,
-    "total": 6
+    "total": 7
   },
   "kevsjh": {
     "merged_prs": 0,
@@ -914,6 +938,12 @@
   "samar70": {
     "merged_prs": 1,
     "issues": 0,
+    "reviews": 0,
+    "total": 1
+  },
+  "samuelalvesg": {
+    "merged_prs": 0,
+    "issues": 1,
     "reviews": 0,
     "total": 1
   },
