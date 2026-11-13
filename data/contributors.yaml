@@ -1,6 +1,6 @@
 # Flutter Contributor Ladder Roster
 # Source of truth for Flutter contributor roles and permissions.
-# Last updated: 2026-10-27
+# Last updated: 2026-11-04
 
 maintainers:
   # Maintainers on the Flutter team (@flutter/googlers and @flutter/partners)
@@ -89,8 +89,6 @@ maintainers:
     - username: dkwingsmt
       role: maintainer
     - username: domesticmouse
-      role: maintainer
-    - username: dsmcl
       role: maintainer
     - username: dustingreen
       role: maintainer
@@ -378,6 +376,8 @@ maintainers:
       role: maintainer
     - username: zoeyfan
       role: maintainer
+    - username: zxdan-git
+      role: maintainer
   partners:
     - username: bdero
       team: "@flutter/flutter_gpu"
@@ -472,6 +472,14 @@ committers:
   # Granted GitHub Write role / merge access
   - username: AbdeMohlbi
     role: committer
+  - username: ahmedsameha1
+    role: committer
+  - username: dbebawy
+    role: committer
+  - username: FMorschel
+    role: committer
+  - username: Gustl22
+    role: committer
   - username: huycozy
     role: committer
   - username: JavadAsadi
@@ -482,7 +490,11 @@ committers:
     role: committer
   - username: navaronbracke
     role: committer
+  - username: planetmarshall
+    role: committer
   - username: rkishan516
+    role: committer
+  - username: stuartmorgan
     role: committer
   - username: ValentinVignal
     role: committer
@@ -490,26 +502,94 @@ committers:
 reviewers:
   # Members of @flutter/reviewers (Child of @flutter/flutter-hackers)
   # Granted GitHub Triage role
+  - username: adil192
+    role: reviewer
+  - username: bambinoua
+    role: reviewer
   - username: bleroux
+    role: reviewer
+  - username: cdeil
+    role: reviewer
+  - username: chika3742
+    role: reviewer
+  - username: chinmaygarde
+    role: reviewer
+  - username: CodeDoctorDE
     role: reviewer
   - username: csells
     role: reviewer
   - username: davidhicks980
     role: reviewer
-  - username: filiph
+  - username: davidmigloz
+    role: reviewer
+  - username: dzolotov
+    role: reviewer
+  - username: faheemabbas766
+    role: reviewer
+  - username: gabrimatic
     role: reviewer
   - username: Hari-07
+    role: reviewer
+  - username: harshyadavDeveloper
     role: reviewer
   - username: htrolle-epam
     grace_until: "2027-10-14"
     role: reviewer
+  - username: illuminati1911
+    role: reviewer
+  - username: jason-simmons
+    role: reviewer
   - username: jwinarske
+    role: reviewer
+  - username: kaluli123123
+    role: reviewer
+  - username: kazbeksultanov
+    role: reviewer
+  - username: khusantoy
+    role: reviewer
+  - username: kjxbyz
+    role: reviewer
+  - username: koji-1009
+    role: reviewer
+  - username: krll-kov
+    role: reviewer
+  - username: LahaLuhem
+    role: reviewer
+  - username: lukemmtt
+    role: reviewer
+  - username: MarlonJD
+    role: reviewer
+  - username: Mr-Pepe
+    role: reviewer
+  - username: muhammadkamel
+    role: reviewer
+  - username: mvincentong
+    role: reviewer
+  - username: nateshmbhat
+    role: reviewer
+  - username: Ortes
     role: reviewer
   - username: piedcipher
     role: reviewer
+  - username: qeepcologne
+    role: reviewer
+  - username: ralph-bergmann
+    role: reviewer
+  - username: randomizedcoder
+    role: reviewer
+  - username: RoarGronmo
+    role: reviewer
   - username: RobertOdrowaz
     role: reviewer
-  - username: stuartmorgan
+  - username: saibotma
+    role: reviewer
+  - username: sero583
+    role: reviewer
+  - username: simolus3
+    role: reviewer
+  - username: sreevishnuqa
+    role: reviewer
+  - username: theprantadutta
     role: reviewer
   - username: tirth-patel-nc
     role: reviewer
@@ -639,6 +719,8 @@ dash_emeritus:
   - username: farshad1489
     role: emeritus
   - username: felangel
+    role: emeritus
+  - username: filiph
     role: emeritus
   - username: FirentisTFW
     role: emeritus
