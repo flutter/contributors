@@ -89,6 +89,12 @@
     "reviews": 0,
     "total": 1
   },
+  "Hugo291": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "JIWON1923": {
     "merged_prs": 1,
     "issues": 0,
@@ -204,6 +210,12 @@
     "total": 1
   },
   "Rud156": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "Runami-Lifeworth": {
     "merged_prs": 0,
     "issues": 1,
     "reviews": 0,
@@ -515,6 +527,12 @@
     "reviews": 0,
     "total": 1
   },
+  "ferraridamiano": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "flar": {
     "merged_prs": 0,
     "issues": 0,
@@ -580,6 +598,12 @@
     "issues": 0,
     "reviews": 2,
     "total": 7
+  },
+  "hasali19": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
   },
   "helin24": {
     "merged_prs": 2,
@@ -743,11 +767,23 @@
     "reviews": 0,
     "total": 1
   },
+  "koji-1009": {
+    "merged_prs": 0,
+    "issues": 2,
+    "reviews": 0,
+    "total": 2
+  },
   "lamek": {
     "merged_prs": 7,
     "issues": 0,
     "reviews": 0,
     "total": 7
+  },
+  "lauw": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
   },
   "leehack": {
     "merged_prs": 0,
@@ -968,8 +1004,8 @@
   "pq": {
     "merged_prs": 7,
     "issues": 3,
-    "reviews": 14,
-    "total": 24
+    "reviews": 15,
+    "total": 25
   },
   "prateek601": {
     "merged_prs": 1,
@@ -1019,11 +1055,23 @@
     "reviews": 1,
     "total": 5
   },
+  "saibotma": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "saitatter": {
     "merged_prs": 0,
     "issues": 3,
     "reviews": 0,
     "total": 3
+  },
+  "seking": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
   },
   "sfshaza2": {
     "merged_prs": 2,
@@ -1043,11 +1091,23 @@
     "reviews": 0,
     "total": 1
   },
+  "slevin-7": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "smgpie3": {
     "merged_prs": 0,
     "issues": 2,
     "reviews": 0,
     "total": 2
+  },
+  "spydon": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
   },
   "srawlins": {
     "merged_prs": 0,

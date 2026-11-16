@@ -1,0 +1,20 @@
+{
+  "cbracken": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "koji-1009": {
+    "merged_prs": 0,
+    "issues": 2,
+    "reviews": 0,
+    "total": 2
+  },
+  "pq": {
+    "merged_prs": 0,
+    "issues": 2,
+    "reviews": 2,
+    "total": 4
+  }
+}
