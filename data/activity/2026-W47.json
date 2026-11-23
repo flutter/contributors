@@ -41,9 +41,21 @@
     "reviews": 0,
     "total": 1
   },
+  "ArtemChikolaev": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "BakaYang": {
     "merged_prs": 0,
     "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "Bhagyaprasad92": {
+    "merged_prs": 1,
+    "issues": 0,
     "reviews": 0,
     "total": 1
   },
@@ -197,6 +209,12 @@
     "reviews": 0,
     "total": 1
   },
+  "MattiaPispisa": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "Mounix99": {
     "merged_prs": 0,
     "issues": 1,
@@ -294,6 +312,12 @@
     "total": 1
   },
   "Wdestroier": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
+  "Widim": {
     "merged_prs": 0,
     "issues": 1,
     "reviews": 0,
@@ -401,6 +425,12 @@
     "reviews": 0,
     "total": 1
   },
+  "byteandbolt": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
+  },
   "cameasonchan-ctrl": {
     "merged_prs": 0,
     "issues": 3,
@@ -494,8 +524,8 @@
   "dkwingsmt": {
     "merged_prs": 0,
     "issues": 0,
-    "reviews": 3,
-    "total": 3
+    "reviews": 4,
+    "total": 4
   },
   "domesticmouse": {
     "merged_prs": 1,
@@ -598,6 +628,12 @@
     "issues": 1,
     "reviews": 4,
     "total": 9
+  },
+  "hacpaka": {
+    "merged_prs": 0,
+    "issues": 2,
+    "reviews": 0,
+    "total": 2
   },
   "hangy233": {
     "merged_prs": 1,
@@ -763,9 +799,9 @@
   },
   "kaluli123123": {
     "merged_prs": 0,
-    "issues": 1,
+    "issues": 2,
     "reviews": 0,
-    "total": 1
+    "total": 2
   },
   "keertip": {
     "merged_prs": 2,
@@ -956,8 +992,8 @@
   "pjkammer": {
     "merged_prs": 0,
     "issues": 0,
-    "reviews": 1,
-    "total": 1
+    "reviews": 2,
+    "total": 2
   },
   "pq": {
     "merged_prs": 19,
@@ -982,6 +1018,12 @@
     "issues": 1,
     "reviews": 0,
     "total": 3
+  },
+  "raven4444": {
+    "merged_prs": 0,
+    "issues": 1,
+    "reviews": 0,
+    "total": 1
   },
   "reidbaker": {
     "merged_prs": 3,
